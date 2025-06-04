@@ -1,0 +1,1738 @@
+2025-06-01 18:09:51,683 - model - INFO - Using device: cpu
+2025-06-01 18:09:51,691 - model - INFO - Loading data...
+2025-06-01 18:09:51,693 - model - ERROR - Error loading data: [Errno 2] No such file or directory: '../data/patients.csv'
+2025-06-01 18:10:58,369 - model - INFO - Using device: cpu
+2025-06-01 18:10:58,370 - model - INFO - Loading data...
+2025-06-01 18:10:58,916 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-01 18:10:58,916 - model - INFO - Preprocessing data...
+2025-06-01 18:10:58,916 - model - ERROR - Error preprocessing data: name 'datetime' is not defined
+2025-06-01 18:12:58,237 - model - INFO - Using device: cpu
+2025-06-01 18:12:58,238 - model - INFO - Loading data...
+2025-06-01 18:12:58,704 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-01 18:12:58,704 - model - INFO - Preprocessing data...
+2025-06-01 18:13:00,290 - model - INFO - Data preprocessing completed
+2025-06-01 18:13:00,295 - model - INFO - Creating patient graph...
+2025-06-01 18:13:00,774 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-01 18:13:01,044 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-01 18:13:01,045 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-01 18:13:01,047 - werkzeug - INFO -  * Restarting with stat
+2025-06-01 18:13:06,811 - model - INFO - Using device: cpu
+2025-06-01 18:13:06,812 - model - INFO - Loading data...
+2025-06-01 18:13:07,296 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-01 18:13:07,296 - model - INFO - Preprocessing data...
+2025-06-01 18:13:08,850 - model - INFO - Data preprocessing completed
+2025-06-01 18:13:08,854 - model - INFO - Creating patient graph...
+2025-06-01 18:13:09,330 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-01 18:13:09,448 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 18:13:09,458 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-01 18:13:21,337 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:13:21] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-01 18:13:21,563 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:13:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-01 18:13:55,632 - werkzeug - INFO - 192.168.43.39 - - [01/Jun/2025 18:13:55] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-01 18:13:55,876 - werkzeug - INFO - 192.168.43.39 - - [01/Jun/2025 18:13:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-01 18:17:54,961 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:17:54] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-01 18:17:55,024 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:17:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-01 18:19:25,621 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:19:25] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 18:20:50,293 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:20:50] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-06-01 18:28:39,173 - werkzeug - INFO - 192.168.43.39 - - [01/Jun/2025 18:28:39] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-01 18:28:39,288 - werkzeug - INFO - 192.168.43.39 - - [01/Jun/2025 18:28:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-01 18:29:01,273 - werkzeug - INFO - 192.168.43.39 - - [01/Jun/2025 18:29:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-01 18:40:34,429 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:40:34] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 18:40:44,363 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:40:44] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 18:40:54,767 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:40:54] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 18:41:11,047 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:41:11] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 18:41:26,225 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:41:26] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 18:41:50,231 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:41:50] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 18:41:51,984 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:41:51] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 18:41:52,441 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:41:52] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 18:42:00,744 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:42:00] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 18:42:25,355 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:42:25] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 18:45:06,819 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:45:06] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 18:45:55,517 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:45:55] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-01 18:47:37,956 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:47:37] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-01 18:48:23,624 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:48:23] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-01 18:48:43,440 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:48:43] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-01 18:49:47,041 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-01 18:49:48,113 - werkzeug - INFO -  * Restarting with stat
+2025-06-01 18:49:54,291 - model - INFO - Using device: cpu
+2025-06-01 18:49:54,292 - model - INFO - Loading data...
+2025-06-01 18:49:54,752 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-01 18:49:54,752 - model - INFO - Preprocessing data...
+2025-06-01 18:49:56,264 - model - INFO - Data preprocessing completed
+2025-06-01 18:49:56,269 - model - INFO - Creating patient graph...
+2025-06-01 18:49:56,737 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-01 18:49:56,852 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 18:49:56,854 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-01 18:50:14,742 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-01 18:50:15,671 - werkzeug - INFO -  * Restarting with stat
+2025-06-01 18:50:21,252 - model - INFO - Using device: cpu
+2025-06-01 18:50:21,253 - model - INFO - Loading data...
+2025-06-01 18:50:21,715 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-01 18:50:21,715 - model - INFO - Preprocessing data...
+2025-06-01 18:50:23,170 - model - INFO - Data preprocessing completed
+2025-06-01 18:50:23,174 - model - INFO - Creating patient graph...
+2025-06-01 18:50:23,634 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-01 18:50:23,756 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 18:50:23,759 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-01 18:50:24,152 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:50:24] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-01 18:50:41,805 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-01 18:50:42,679 - werkzeug - INFO -  * Restarting with stat
+2025-06-01 18:50:48,195 - model - INFO - Using device: cpu
+2025-06-01 18:50:48,196 - model - INFO - Loading data...
+2025-06-01 18:50:48,664 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-01 18:50:48,664 - model - INFO - Preprocessing data...
+2025-06-01 18:50:50,207 - model - INFO - Data preprocessing completed
+2025-06-01 18:50:50,211 - model - INFO - Creating patient graph...
+2025-06-01 18:50:50,685 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-01 18:50:50,804 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 18:50:50,806 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-01 18:51:28,319 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:51:28] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-01 18:51:51,211 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:51:51] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-01 18:51:57,655 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:51:57] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-06-01 18:54:08,551 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:54:08] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 18:54:10,937 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:54:10] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 18:54:18,828 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:54:18] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 18:54:19,777 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:54:19] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 18:54:24,543 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:54:24] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 18:54:31,087 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:54:31] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 18:54:32,309 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 18:54:32] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 18:57:36,303 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-01 18:57:37,270 - werkzeug - INFO -  * Restarting with stat
+2025-06-01 18:57:42,864 - model - INFO - Using device: cpu
+2025-06-01 18:57:42,865 - model - INFO - Loading data...
+2025-06-01 18:57:43,346 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-01 18:57:43,346 - model - INFO - Preprocessing data...
+2025-06-01 18:57:44,921 - model - INFO - Data preprocessing completed
+2025-06-01 18:57:44,925 - model - INFO - Creating patient graph...
+2025-06-01 18:57:45,397 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-01 18:57:45,537 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 18:57:45,539 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-01 18:57:48,842 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-01 18:57:49,765 - werkzeug - INFO -  * Restarting with stat
+2025-06-01 18:57:55,564 - model - INFO - Using device: cpu
+2025-06-01 18:57:55,566 - model - INFO - Loading data...
+2025-06-01 18:57:56,044 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-01 18:57:56,044 - model - INFO - Preprocessing data...
+2025-06-01 18:57:57,587 - model - INFO - Data preprocessing completed
+2025-06-01 18:57:57,594 - model - INFO - Creating patient graph...
+2025-06-01 18:57:58,074 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-01 18:57:58,217 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 18:57:58,220 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-01 18:58:02,862 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-01 18:58:03,749 - werkzeug - INFO -  * Restarting with stat
+2025-06-01 18:59:11,665 - model - INFO - Using device: cpu
+2025-06-01 18:59:11,666 - model - INFO - Loading data...
+2025-06-01 18:59:11,667 - model - ERROR - Error loading data: [Errno 2] No such file or directory: '../data//patients.csv'
+2025-06-01 18:59:56,464 - model - INFO - Using device: cpu
+2025-06-01 18:59:56,465 - model - INFO - Loading data...
+2025-06-01 18:59:56,933 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-01 18:59:56,933 - model - INFO - Preprocessing data...
+2025-06-01 18:59:58,653 - model - INFO - Data preprocessing completed
+2025-06-01 18:59:58,656 - model - INFO - Creating patient graph...
+2025-06-01 18:59:59,263 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-01 18:59:59,434 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-01 18:59:59,434 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-01 18:59:59,436 - werkzeug - INFO -  * Restarting with stat
+2025-06-01 19:00:06,250 - model - INFO - Using device: cpu
+2025-06-01 19:00:06,252 - model - INFO - Loading data...
+2025-06-01 19:00:06,799 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-01 19:00:06,799 - model - INFO - Preprocessing data...
+2025-06-01 19:00:08,611 - model - INFO - Data preprocessing completed
+2025-06-01 19:00:08,615 - model - INFO - Creating patient graph...
+2025-06-01 19:00:09,192 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-01 19:00:09,333 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:00:09,336 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-01 19:00:48,391 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:00:48] "POST /predict HTTP/1.1" 200 -
+2025-06-01 19:20:29,270 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:20:29] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-01 19:22:53,748 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:22:53] "POST /predict HTTP/1.1" 200 -
+2025-06-02 13:04:59,608 - model - INFO - Using device: cpu
+2025-06-02 13:04:59,610 - model - INFO - Loading data...
+2025-06-02 13:05:00,714 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 13:05:00,714 - model - INFO - Preprocessing data...
+2025-06-02 13:05:04,756 - model - INFO - Data preprocessing completed
+2025-06-02 13:05:04,764 - model - INFO - Creating patient graph...
+2025-06-02 13:05:05,920 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 13:05:06,380 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-02 13:05:06,380 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 13:05:06,385 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 13:05:21,833 - model - INFO - Using device: cpu
+2025-06-02 13:05:21,836 - model - INFO - Loading data...
+2025-06-02 13:05:22,841 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 13:05:22,841 - model - INFO - Preprocessing data...
+2025-06-02 13:05:26,769 - model - INFO - Data preprocessing completed
+2025-06-02 13:05:26,775 - model - INFO - Creating patient graph...
+2025-06-02 13:05:28,042 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 13:05:28,314 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 13:05:28,319 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 13:05:53,700 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:05:53] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 13:05:53,954 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:05:53] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 13:07:43,416 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:07:43] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 13:07:43,675 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:07:43] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 13:10:07,150 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 13:10:08,658 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 13:10:23,420 - model - INFO - Using device: cpu
+2025-06-02 13:10:23,423 - model - INFO - Loading data...
+2025-06-02 13:10:24,490 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 13:10:24,490 - model - INFO - Preprocessing data...
+2025-06-02 13:10:28,026 - model - INFO - Data preprocessing completed
+2025-06-02 13:10:28,032 - model - INFO - Creating patient graph...
+2025-06-02 13:10:29,153 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 13:10:29,445 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 13:10:29,451 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 13:10:59,502 - model - INFO - Using device: cpu
+2025-06-02 13:10:59,505 - model - INFO - Loading data...
+2025-06-02 13:11:00,525 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 13:11:00,525 - model - INFO - Preprocessing data...
+2025-06-02 13:11:03,987 - model - INFO - Data preprocessing completed
+2025-06-02 13:11:03,992 - model - INFO - Creating patient graph...
+2025-06-02 13:11:05,175 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 13:11:05,506 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5173
+ * Running on http://192.168.43.39:5173
+2025-06-02 13:11:05,506 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 13:11:05,509 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 13:11:18,674 - model - INFO - Using device: cpu
+2025-06-02 13:11:18,677 - model - INFO - Loading data...
+2025-06-02 13:11:19,869 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 13:11:19,869 - model - INFO - Preprocessing data...
+2025-06-02 13:11:24,010 - model - INFO - Data preprocessing completed
+2025-06-02 13:11:24,016 - model - INFO - Creating patient graph...
+2025-06-02 13:11:25,318 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 13:11:25,606 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 13:11:25,613 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 13:11:26,696 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:11:26] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-02 13:11:28,380 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:11:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-02 13:12:07,632 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:12:07] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-02 13:12:07,876 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:12:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-02 13:19:22,922 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 13:19:24,225 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 13:19:34,845 - model - INFO - Using device: cpu
+2025-06-02 13:19:34,848 - model - INFO - Loading data...
+2025-06-02 13:19:35,689 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 13:19:35,689 - model - INFO - Preprocessing data...
+2025-06-02 13:19:38,382 - model - INFO - Data preprocessing completed
+2025-06-02 13:19:38,387 - model - INFO - Creating patient graph...
+2025-06-02 13:19:39,262 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 13:19:39,473 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 13:19:39,477 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 13:20:30,779 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:20:30] "[33mGET /src/main.tsx HTTP/1.1[0m" 404 -
+2025-06-02 13:29:42,803 - model - INFO - Using device: cpu
+2025-06-02 13:29:42,806 - model - INFO - Loading data...
+2025-06-02 13:29:43,655 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 13:29:43,656 - model - INFO - Preprocessing data...
+2025-06-02 13:29:46,586 - model - INFO - Data preprocessing completed
+2025-06-02 13:29:46,592 - model - INFO - Creating patient graph...
+2025-06-02 13:29:47,548 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 13:29:47,797 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-02 13:29:47,798 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 13:29:47,800 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 13:29:57,864 - model - INFO - Using device: cpu
+2025-06-02 13:29:57,866 - model - INFO - Loading data...
+2025-06-02 13:29:58,706 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 13:29:58,706 - model - INFO - Preprocessing data...
+2025-06-02 13:30:01,628 - model - INFO - Data preprocessing completed
+2025-06-02 13:30:01,634 - model - INFO - Creating patient graph...
+2025-06-02 13:30:02,604 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 13:30:02,809 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 13:30:02,812 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 13:31:17,754 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:31:17] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 13:31:20,184 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:31:20] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 13:31:21,104 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:31:21] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 13:31:35,361 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:31:35] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 13:33:45,582 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:33:45] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-02 13:33:45,886 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:33:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-02 13:34:00,922 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:34:00] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-02 13:34:07,517 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:34:07] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-02 13:34:11,447 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:34:11] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-06-02 13:39:05,863 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:39:05] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 13:42:43,173 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:42:43] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-02 13:42:43,238 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:42:43] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-06-02 13:42:54,088 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:42:54] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 13:46:43,797 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:46:43] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 13:47:45,322 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:47:45] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-02 13:48:00,841 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:48:00] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 13:52:18,857 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:52:18] "POST /predict HTTP/1.1" 200 -
+2025-06-02 13:54:20,583 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 13:54:21,835 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 13:54:31,750 - model - INFO - Using device: cpu
+2025-06-02 13:54:31,753 - model - INFO - Loading data...
+2025-06-02 13:54:32,500 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 13:54:32,501 - model - INFO - Preprocessing data...
+2025-06-02 13:54:35,081 - model - INFO - Data preprocessing completed
+2025-06-02 13:54:35,086 - model - INFO - Creating patient graph...
+2025-06-02 13:54:35,967 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 13:54:36,184 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 13:54:36,188 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 13:55:32,933 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:55:32] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2025-06-02 13:56:00,455 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:56:00] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-02 13:56:08,377 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:56:08] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 13:57:15,643 - model - INFO - Using device: cpu
+2025-06-02 13:57:15,646 - model - INFO - Loading data...
+2025-06-02 13:57:16,457 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 13:57:16,457 - model - INFO - Preprocessing data...
+2025-06-02 13:57:19,494 - model - INFO - Data preprocessing completed
+2025-06-02 13:57:19,500 - model - INFO - Creating patient graph...
+2025-06-02 13:57:20,440 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 13:57:20,682 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-02 13:57:20,682 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 13:57:20,684 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 13:57:31,130 - model - INFO - Using device: cpu
+2025-06-02 13:57:31,132 - model - INFO - Loading data...
+2025-06-02 13:57:31,921 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 13:57:31,922 - model - INFO - Preprocessing data...
+2025-06-02 13:57:34,701 - model - INFO - Data preprocessing completed
+2025-06-02 13:57:34,706 - model - INFO - Creating patient graph...
+2025-06-02 13:57:35,667 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 13:57:35,877 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 13:57:35,882 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 13:57:43,935 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:57:43] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-02 13:58:06,649 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:58:06] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 13:58:42,845 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 13:58:42] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-06-02 14:02:05,954 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:02:05] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:03:27,089 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:03:27] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:05:34,682 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:05:34] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:06:46,023 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:06:46] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:07:28,073 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:07:28] "POST /predict HTTP/1.1" 200 -
+2025-06-02 14:07:37,986 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:07:37] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-06-02 14:19:33,614 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:19:33] "POST /predict HTTP/1.1" 200 -
+2025-06-02 14:20:07,155 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:20:07] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2025-06-02 14:24:01,591 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:24:01] "POST /predict HTTP/1.1" 200 -
+2025-06-02 14:24:24,469 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:24:24] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:28:38,228 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:28:38] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:28:40,553 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:28:40] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:29:09,559 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:29:09] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:29:10,962 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:29:10] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:32:11,911 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:32:11] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:32:24,286 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:32:24] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:33:15,563 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:33:15] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:33:29,257 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:33:29] "POST /predict HTTP/1.1" 200 -
+2025-06-02 14:34:13,795 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 14:34:15,386 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 14:34:28,540 - model - INFO - Using device: cpu
+2025-06-02 14:34:28,543 - model - INFO - Loading data...
+2025-06-02 14:34:29,481 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 14:34:29,482 - model - INFO - Preprocessing data...
+2025-06-02 14:34:32,748 - model - INFO - Data preprocessing completed
+2025-06-02 14:34:32,753 - model - INFO - Creating patient graph...
+2025-06-02 14:34:33,815 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 14:34:34,080 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 14:34:34,085 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 14:34:34,817 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:34:34] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:35:08,760 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:35:08] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:38:28,951 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:38:28] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:40:27,560 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 14:40:28,807 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 14:40:42,375 - model - INFO - Using device: cpu
+2025-06-02 14:40:42,378 - model - INFO - Loading data...
+2025-06-02 14:40:43,268 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 14:40:43,269 - model - INFO - Preprocessing data...
+2025-06-02 14:40:46,449 - model - INFO - Data preprocessing completed
+2025-06-02 14:40:46,455 - model - INFO - Creating patient graph...
+2025-06-02 14:40:47,632 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 14:40:47,896 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 14:40:47,900 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 14:41:09,048 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:41:09] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:41:56,309 - model - INFO - Using device: cpu
+2025-06-02 14:41:56,312 - model - INFO - Loading data...
+2025-06-02 14:41:57,211 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 14:41:57,211 - model - INFO - Preprocessing data...
+2025-06-02 14:42:00,427 - model - INFO - Data preprocessing completed
+2025-06-02 14:42:00,433 - model - INFO - Creating patient graph...
+2025-06-02 14:42:01,561 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 14:42:01,833 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-02 14:42:01,834 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 14:42:01,837 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 14:42:13,923 - model - INFO - Using device: cpu
+2025-06-02 14:42:13,926 - model - INFO - Loading data...
+2025-06-02 14:42:14,869 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 14:42:14,869 - model - INFO - Preprocessing data...
+2025-06-02 14:42:18,301 - model - INFO - Data preprocessing completed
+2025-06-02 14:42:18,308 - model - INFO - Creating patient graph...
+2025-06-02 14:42:19,410 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 14:42:19,676 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 14:42:19,681 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 14:42:57,781 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:42:57] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:46:29,795 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:46:29] "POST /predict HTTP/1.1" 200 -
+2025-06-02 14:52:00,221 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:52:00] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:53:17,792 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:53:17] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:53:41,824 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:53:41] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:53:58,113 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:53:58] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 14:54:46,128 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 14:54:46] "POST /predict HTTP/1.1" 200 -
+2025-06-02 15:00:47,992 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:00:47] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-02 15:00:52,921 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:00:52] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-06-02 15:10:02,051 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:10:02] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 15:14:15,906 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:14:15] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 15:14:16,159 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:14:16] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 15:15:38,905 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 15:15:40,227 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 15:15:52,614 - model - INFO - Using device: cpu
+2025-06-02 15:15:52,617 - model - INFO - Loading data...
+2025-06-02 15:15:53,492 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 15:15:53,492 - model - INFO - Preprocessing data...
+2025-06-02 15:15:56,684 - model - INFO - Data preprocessing completed
+2025-06-02 15:15:56,690 - model - INFO - Creating patient graph...
+2025-06-02 15:15:58,170 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 15:15:58,430 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 15:15:58,435 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 15:16:05,301 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 15:16:06,576 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 15:16:19,292 - model - INFO - Using device: cpu
+2025-06-02 15:16:19,295 - model - INFO - Loading data...
+2025-06-02 15:16:20,361 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 15:16:20,361 - model - INFO - Preprocessing data...
+2025-06-02 15:16:23,597 - model - INFO - Data preprocessing completed
+2025-06-02 15:16:23,605 - model - INFO - Creating patient graph...
+2025-06-02 15:16:42,455 - model - INFO - Using device: cpu
+2025-06-02 15:16:42,459 - model - INFO - Loading data...
+2025-06-02 15:16:43,360 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 15:16:43,360 - model - INFO - Preprocessing data...
+2025-06-02 15:16:46,511 - model - INFO - Data preprocessing completed
+2025-06-02 15:16:46,517 - model - INFO - Creating patient graph...
+2025-06-02 15:16:47,575 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 15:16:47,880 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-02 15:16:47,881 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 15:16:47,884 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 15:17:00,086 - model - INFO - Using device: cpu
+2025-06-02 15:17:00,088 - model - INFO - Loading data...
+2025-06-02 15:17:01,044 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 15:17:01,044 - model - INFO - Preprocessing data...
+2025-06-02 15:17:04,340 - model - INFO - Data preprocessing completed
+2025-06-02 15:17:04,345 - model - INFO - Creating patient graph...
+2025-06-02 15:17:05,476 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 15:17:05,728 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 15:17:05,732 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 15:17:26,185 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:17:26] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 15:17:26,444 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:17:26] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 15:17:37,506 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:17:37] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 15:17:37,815 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:17:37] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 15:18:25,191 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:18:25] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 15:18:25,511 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:18:25] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 15:18:43,874 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:18:43] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 15:18:44,189 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:18:44] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 15:19:15,212 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:19:15] "POST /predict HTTP/1.1" 200 -
+2025-06-02 15:22:15,973 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:22:15] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 15:22:16,236 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:22:16] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 15:23:23,708 - model - INFO - Using device: cpu
+2025-06-02 15:23:23,715 - model - INFO - Loading data...
+2025-06-02 15:23:24,625 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 15:23:24,625 - model - INFO - Preprocessing data...
+2025-06-02 15:23:27,684 - model - INFO - Data preprocessing completed
+2025-06-02 15:23:27,689 - model - INFO - Creating patient graph...
+2025-06-02 15:23:28,747 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 15:23:29,040 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-02 15:23:29,041 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 15:23:29,044 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 15:23:41,491 - model - INFO - Using device: cpu
+2025-06-02 15:23:41,494 - model - INFO - Loading data...
+2025-06-02 15:23:42,412 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 15:23:42,413 - model - INFO - Preprocessing data...
+2025-06-02 15:23:45,923 - model - INFO - Data preprocessing completed
+2025-06-02 15:23:45,930 - model - INFO - Creating patient graph...
+2025-06-02 15:23:47,042 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 15:23:47,293 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 15:23:47,297 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 15:23:52,309 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:23:52] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 15:23:52,580 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:23:52] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 15:24:41,478 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 15:24:42,866 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 15:24:55,440 - model - INFO - Using device: cpu
+2025-06-02 15:24:55,443 - model - INFO - Loading data...
+2025-06-02 15:24:56,421 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 15:24:56,421 - model - INFO - Preprocessing data...
+2025-06-02 15:24:59,511 - model - INFO - Data preprocessing completed
+2025-06-02 15:24:59,518 - model - INFO - Creating patient graph...
+2025-06-02 15:25:00,640 - model - INFO - Created graph with 1169 nodes and 1138 edges
+2025-06-02 15:25:00,881 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 15:25:00,886 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 15:25:19,927 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:25:19] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 15:25:20,187 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:25:20] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 15:30:38,482 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\model.py', reloading
+2025-06-02 15:30:39,894 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 15:34:18,392 - model - INFO - Using device: cpu
+2025-06-02 15:34:18,394 - model - INFO - Loading data...
+2025-06-02 15:34:19,353 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 15:34:19,353 - model - INFO - Preprocessing data...
+2025-06-02 15:34:22,537 - model - INFO - Data preprocessing completed
+2025-06-02 15:34:22,544 - model - INFO - Creating patient graph...
+2025-06-02 15:34:23,684 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 15:34:23,968 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-02 15:34:23,968 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 15:34:23,971 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 15:34:36,983 - model - INFO - Using device: cpu
+2025-06-02 15:34:36,986 - model - INFO - Loading data...
+2025-06-02 15:34:38,483 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 15:34:38,483 - model - INFO - Preprocessing data...
+2025-06-02 15:34:42,393 - model - INFO - Data preprocessing completed
+2025-06-02 15:34:42,402 - model - INFO - Creating patient graph...
+2025-06-02 15:34:43,579 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 15:34:43,807 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 15:34:43,812 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 15:34:44,551 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:34:44] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 15:34:44,558 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:34:44] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 15:42:36,448 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:42:36] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 15:42:36,793 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:42:36] "POST /predict HTTP/1.1" 200 -
+2025-06-02 15:47:55,165 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 15:47:56,560 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 15:51:59,064 - model - INFO - Using device: cpu
+2025-06-02 15:55:11,107 - model - INFO - Using device: cpu
+2025-06-02 15:55:11,111 - model - INFO - Loading data...
+2025-06-02 15:55:12,144 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 15:55:12,144 - model - INFO - Preprocessing data...
+2025-06-02 15:55:15,404 - model - INFO - Data preprocessing completed
+2025-06-02 15:55:15,411 - model - INFO - Creating patient graph...
+2025-06-02 15:55:16,548 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 15:55:16,858 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-02 15:55:16,858 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 15:55:16,862 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 15:55:28,881 - model - INFO - Using device: cpu
+2025-06-02 15:55:28,883 - model - INFO - Loading data...
+2025-06-02 15:55:29,872 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 15:55:29,872 - model - INFO - Preprocessing data...
+2025-06-02 15:55:33,155 - model - INFO - Data preprocessing completed
+2025-06-02 15:55:33,161 - model - INFO - Creating patient graph...
+2025-06-02 15:55:34,274 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 15:55:34,522 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 15:55:34,528 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 15:55:54,656 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:55:54] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 15:55:54,996 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:55:54] "POST /predict HTTP/1.1" 200 -
+2025-06-02 15:56:48,645 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:56:48] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 15:56:49,012 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:56:49] "POST /predict HTTP/1.1" 200 -
+2025-06-02 15:56:50,092 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:56:50] "POST /predict HTTP/1.1" 200 -
+2025-06-02 15:56:51,890 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:56:51] "POST /predict HTTP/1.1" 200 -
+2025-06-02 15:59:55,177 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:59:55] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 15:59:55,424 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 15:59:55] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 16:00:11,790 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:00:11] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:00:12,189 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:00:12] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:01:56,423 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 16:01:57,774 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 16:02:11,256 - model - INFO - Using device: cpu
+2025-06-02 16:02:11,259 - model - INFO - Loading data...
+2025-06-02 16:02:12,486 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 16:02:12,487 - model - INFO - Preprocessing data...
+2025-06-02 16:02:16,572 - model - INFO - Data preprocessing completed
+2025-06-02 16:02:16,578 - model - INFO - Creating patient graph...
+2025-06-02 16:02:17,941 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 16:02:18,224 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 16:02:18,231 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 16:09:03,100 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:09:03] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:09:03,421 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:09:03] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:09:06,683 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 16:09:08,025 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 16:09:21,430 - model - INFO - Using device: cpu
+2025-06-02 16:09:21,433 - model - INFO - Loading data...
+2025-06-02 16:09:22,462 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 16:09:22,462 - model - INFO - Preprocessing data...
+2025-06-02 16:09:25,921 - model - INFO - Data preprocessing completed
+2025-06-02 16:09:25,927 - model - INFO - Creating patient graph...
+2025-06-02 16:09:27,218 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 16:09:27,479 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 16:09:27,484 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 16:09:28,251 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:09:28] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:09:28,426 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:09:28] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-06-02 16:12:09,868 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 16:12:11,278 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 16:13:03,633 - model - INFO - Using device: cpu
+2025-06-02 16:13:03,635 - model - INFO - Loading data...
+2025-06-02 16:13:04,619 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 16:13:04,620 - model - INFO - Preprocessing data...
+2025-06-02 16:13:07,896 - model - INFO - Data preprocessing completed
+2025-06-02 16:13:07,902 - model - INFO - Creating patient graph...
+2025-06-02 16:13:09,027 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 16:13:09,328 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-02 16:13:09,328 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 16:13:09,331 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 16:13:21,362 - model - INFO - Using device: cpu
+2025-06-02 16:13:21,365 - model - INFO - Loading data...
+2025-06-02 16:13:22,352 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 16:13:22,353 - model - INFO - Preprocessing data...
+2025-06-02 16:13:25,619 - model - INFO - Data preprocessing completed
+2025-06-02 16:13:25,626 - model - INFO - Creating patient graph...
+2025-06-02 16:13:26,841 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 16:13:27,168 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 16:13:27,173 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 16:13:38,556 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:13:38] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:13:38,912 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:13:38] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:22:54,070 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:22:54] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:22:54,377 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:22:54] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:22:55,707 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:22:55] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:22:57,034 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:22:57] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:22:59,639 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:22:59] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:23:00,016 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:23:00] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:23:02,701 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:23:02] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:23:05,994 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:23:05] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:23:06,305 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:23:06] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:23:12,688 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:23:12] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:23:13,048 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:23:13] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:24:00,758 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:24:00] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:24:01,135 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:24:01] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:27:00,359 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:27:00] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:27:00,649 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:27:00] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:27:14,679 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:27:14] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:27:15,042 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:27:15] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:27:18,149 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:27:18] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:28:16,968 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 16:28:18,128 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 16:28:42,494 - model - INFO - Using device: cpu
+2025-06-02 16:28:42,496 - model - INFO - Loading data...
+2025-06-02 16:28:43,447 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 16:28:43,447 - model - INFO - Preprocessing data...
+2025-06-02 16:28:46,711 - model - INFO - Data preprocessing completed
+2025-06-02 16:28:46,717 - model - INFO - Creating patient graph...
+2025-06-02 16:28:47,802 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 16:28:48,077 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 16:28:48,080 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 16:29:23,950 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:29:23] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:29:24,280 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:29:24] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:30:29,052 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:30:29] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:30:29,376 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:30:29] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:30:57,032 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:30:57] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:30:57,397 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:30:57] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:32:33,430 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:32:33] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:32:33,754 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:32:33] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:35:01,650 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:35:01] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:35:01,945 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:35:01] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:35:16,574 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:35:16] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:35:16,938 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:35:16] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:35:20,977 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:35:20] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:35:25,207 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:35:25] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:35:25,526 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:35:25] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:39:34,894 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:39:34] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:39:35,204 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:39:35] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:42:37,417 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:42:37] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:42:37,720 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:42:37] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:43:46,367 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:43:46] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:43:46,683 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:43:46] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:46:02,829 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:46:02] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:46:03,144 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:46:03] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:46:25,611 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:46:25] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:46:25,963 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:46:25] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:46:27,634 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:46:27] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:49:31,947 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:49:31] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:49:32,262 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:49:32] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:51:19,906 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:19] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:51:20,203 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:20] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:52:48,024 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:48] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:52:48,338 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:48] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:53:33,998 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:53:33] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:53:34,359 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:53:34] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:54:07,916 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:54:07] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:54:08,278 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:54:08] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:54:38,924 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:54:38] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:54:39,283 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:54:39] "POST /predict HTTP/1.1" 200 -
+2025-06-02 16:59:03,963 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:03] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 16:59:04,270 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:04] "POST /predict HTTP/1.1" 200 -
+2025-06-02 17:06:40,874 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 17:06:40] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 17:06:41,195 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 17:06:41] "POST /predict HTTP/1.1" 200 -
+2025-06-02 17:10:45,649 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 17:10:45] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 17:10:45,997 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 17:10:45] "POST /predict HTTP/1.1" 200 -
+2025-06-02 18:03:51,338 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:03:51] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 18:03:51,694 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:03:51] "POST /predict HTTP/1.1" 200 -
+2025-06-02 18:05:55,830 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:05:55] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 18:05:56,170 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:05:56] "POST /predict HTTP/1.1" 200 -
+2025-06-02 18:07:25,788 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:07:25] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 18:07:30,692 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:07:30] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 18:08:05,715 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:08:05] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 18:08:24,370 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:08:24] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 18:08:33,876 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:08:33] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 18:08:34,226 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:08:34] "POST /predict HTTP/1.1" 200 -
+2025-06-02 18:08:46,852 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:08:46] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-06-02 18:09:04,022 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:09:04] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 18:09:04,420 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:09:04] "POST /predict HTTP/1.1" 200 -
+2025-06-02 18:11:08,555 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:11:08] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 18:11:08,891 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:11:08] "POST /predict HTTP/1.1" 200 -
+2025-06-02 18:15:34,676 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 18:15:36,239 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 18:15:58,729 - model - INFO - Using device: cpu
+2025-06-02 18:15:58,731 - model - INFO - Loading data...
+2025-06-02 18:15:59,609 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 18:15:59,609 - model - INFO - Preprocessing data...
+2025-06-02 18:16:02,782 - model - INFO - Data preprocessing completed
+2025-06-02 18:16:02,791 - model - INFO - Creating patient graph...
+2025-06-02 18:16:03,868 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 18:16:04,125 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-02 18:16:04,126 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 18:16:04,129 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 18:16:16,413 - model - INFO - Using device: cpu
+2025-06-02 18:16:16,415 - model - INFO - Loading data...
+2025-06-02 18:16:17,593 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 18:16:17,593 - model - INFO - Preprocessing data...
+2025-06-02 18:16:20,730 - model - INFO - Data preprocessing completed
+2025-06-02 18:16:20,740 - model - INFO - Creating patient graph...
+2025-06-02 18:16:21,968 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 18:16:22,229 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 18:16:22,236 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 18:16:22,924 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:16:22] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 18:16:23,023 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:16:23] "POST /predict HTTP/1.1" 200 -
+2025-06-02 18:16:47,904 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 18:16:49,470 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 18:17:00,763 - model - INFO - Using device: cpu
+2025-06-02 18:17:00,766 - model - INFO - Loading data...
+2025-06-02 18:17:01,782 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 18:17:01,782 - model - INFO - Preprocessing data...
+2025-06-02 18:17:05,216 - model - INFO - Data preprocessing completed
+2025-06-02 18:17:05,222 - model - INFO - Creating patient graph...
+2025-06-02 18:17:06,501 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 18:17:06,795 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 18:17:06,800 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 18:17:28,396 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:17:28] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 18:17:28,775 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:17:28] "POST /predict HTTP/1.1" 200 -
+2025-06-02 18:21:00,500 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 18:21:02,089 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 18:21:20,082 - model - INFO - Using device: cpu
+2025-06-02 18:21:20,085 - model - INFO - Loading data...
+2025-06-02 18:21:20,949 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 18:21:20,949 - model - INFO - Preprocessing data...
+2025-06-02 18:21:23,911 - model - INFO - Data preprocessing completed
+2025-06-02 18:21:23,918 - model - INFO - Creating patient graph...
+2025-06-02 18:21:24,968 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 18:21:25,297 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-02 18:21:25,298 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 18:21:25,301 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 18:21:37,179 - model - INFO - Using device: cpu
+2025-06-02 18:21:37,182 - model - INFO - Loading data...
+2025-06-02 18:21:38,484 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 18:21:38,484 - model - INFO - Preprocessing data...
+2025-06-02 18:21:41,955 - model - INFO - Data preprocessing completed
+2025-06-02 18:21:41,962 - model - INFO - Creating patient graph...
+2025-06-02 18:21:43,136 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 18:21:43,388 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 18:21:43,394 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 18:21:44,079 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:21:44] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 18:21:44,487 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:21:44] "POST /predict HTTP/1.1" 200 -
+2025-06-02 18:25:36,361 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 18:25:37,741 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 18:25:50,077 - model - INFO - Using device: cpu
+2025-06-02 18:25:50,080 - model - INFO - Loading data...
+2025-06-02 18:25:51,219 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 18:25:51,220 - model - INFO - Preprocessing data...
+2025-06-02 18:25:54,802 - model - INFO - Data preprocessing completed
+2025-06-02 18:25:54,810 - model - INFO - Creating patient graph...
+2025-06-02 18:25:56,028 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 18:25:56,287 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 18:25:56,293 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 18:25:57,057 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:25:57] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 18:25:57,206 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:25:57] "POST /predict HTTP/1.1" 200 -
+2025-06-02 18:26:19,553 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 18:26:21,237 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 18:26:45,346 - model - INFO - Using device: cpu
+2025-06-02 18:26:45,350 - model - INFO - Loading data...
+2025-06-02 18:26:46,253 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 18:26:46,254 - model - INFO - Preprocessing data...
+2025-06-02 18:26:49,085 - model - INFO - Data preprocessing completed
+2025-06-02 18:26:49,091 - model - INFO - Creating patient graph...
+2025-06-02 18:26:50,040 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 18:26:50,344 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-02 18:26:50,345 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 18:26:50,347 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 18:27:00,975 - model - INFO - Using device: cpu
+2025-06-02 18:27:00,978 - model - INFO - Loading data...
+2025-06-02 18:27:01,866 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 18:27:01,867 - model - INFO - Preprocessing data...
+2025-06-02 18:27:04,776 - model - INFO - Data preprocessing completed
+2025-06-02 18:27:04,782 - model - INFO - Creating patient graph...
+2025-06-02 18:27:05,736 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 18:27:05,964 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 18:27:05,969 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 18:27:21,726 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:27:21] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 18:27:22,116 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:27:22] "POST /predict HTTP/1.1" 200 -
+2025-06-02 18:33:04,929 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 18:33:06,188 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 18:33:17,859 - model - INFO - Using device: cpu
+2025-06-02 18:33:17,862 - model - INFO - Loading data...
+2025-06-02 18:33:18,759 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 18:33:18,759 - model - INFO - Preprocessing data...
+2025-06-02 18:33:21,629 - model - INFO - Data preprocessing completed
+2025-06-02 18:33:21,636 - model - INFO - Creating patient graph...
+2025-06-02 18:33:22,599 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 18:33:22,824 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 18:33:22,830 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 18:33:30,984 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:33:30] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 18:33:31,343 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:33:31] "POST /predict HTTP/1.1" 200 -
+2025-06-02 18:36:36,766 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 18:36:38,179 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 18:36:58,242 - model - INFO - Using device: cpu
+2025-06-02 18:36:58,244 - model - INFO - Loading data...
+2025-06-02 18:36:59,096 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 18:36:59,096 - model - INFO - Preprocessing data...
+2025-06-02 18:37:02,293 - model - INFO - Data preprocessing completed
+2025-06-02 18:37:02,300 - model - INFO - Creating patient graph...
+2025-06-02 18:37:03,309 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 18:37:03,596 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-02 18:37:03,597 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 18:37:03,600 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 18:37:13,874 - model - INFO - Using device: cpu
+2025-06-02 18:37:13,877 - model - INFO - Loading data...
+2025-06-02 18:37:14,762 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 18:37:14,762 - model - INFO - Preprocessing data...
+2025-06-02 18:37:17,566 - model - INFO - Data preprocessing completed
+2025-06-02 18:37:17,572 - model - INFO - Creating patient graph...
+2025-06-02 18:37:18,605 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 18:37:18,877 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 18:37:18,881 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 18:42:04,610 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:42:04] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 18:42:04,967 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:42:04] "POST /predict HTTP/1.1" 200 -
+2025-06-02 18:46:15,228 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 18:46:16,561 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 18:46:40,153 - model - INFO - Using device: cpu
+2025-06-02 18:46:40,155 - model - INFO - Loading data...
+2025-06-02 18:46:41,043 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 18:46:41,044 - model - INFO - Preprocessing data...
+2025-06-02 18:46:43,878 - model - INFO - Data preprocessing completed
+2025-06-02 18:46:43,884 - model - INFO - Creating patient graph...
+2025-06-02 18:46:44,857 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 18:46:45,127 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-02 18:46:45,127 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 18:46:45,131 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 18:46:55,502 - model - INFO - Using device: cpu
+2025-06-02 18:46:55,505 - model - INFO - Loading data...
+2025-06-02 18:46:56,384 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 18:46:56,385 - model - INFO - Preprocessing data...
+2025-06-02 18:46:59,215 - model - INFO - Data preprocessing completed
+2025-06-02 18:46:59,221 - model - INFO - Creating patient graph...
+2025-06-02 18:47:00,187 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 18:47:00,475 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 18:47:00,481 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 18:48:01,453 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:48:01] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 18:48:01,820 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:48:01] "POST /predict HTTP/1.1" 200 -
+2025-06-02 18:53:42,269 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:53:42] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 18:53:42,614 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:53:42] "POST /predict HTTP/1.1" 200 -
+2025-06-02 18:55:41,497 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:55:41] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 18:55:41,860 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:55:41] "POST /predict HTTP/1.1" 200 -
+2025-06-02 18:55:59,008 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:55:59] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 18:55:59,401 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:55:59] "POST /predict HTTP/1.1" 200 -
+2025-06-02 18:56:02,087 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:56:02] "POST /predict HTTP/1.1" 200 -
+2025-06-02 18:56:08,452 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:56:08] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 18:56:08,785 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:56:08] "POST /predict HTTP/1.1" 200 -
+2025-06-02 18:57:17,344 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:57:17] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 18:57:17,778 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 18:57:17] "POST /predict HTTP/1.1" 200 -
+2025-06-02 19:08:08,622 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 19:08:10,054 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 19:08:22,061 - model - INFO - Using device: cpu
+2025-06-02 19:08:22,064 - model - INFO - Loading data...
+2025-06-02 19:08:23,057 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 19:08:23,057 - model - INFO - Preprocessing data...
+2025-06-02 19:08:26,430 - model - INFO - Data preprocessing completed
+2025-06-02 19:08:26,436 - model - INFO - Creating patient graph...
+2025-06-02 19:08:27,611 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 19:08:27,896 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 19:08:27,901 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 19:08:28,555 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:08:28] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 19:08:28,656 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:08:28] "POST /predict HTTP/1.1" 200 -
+2025-06-02 19:09:24,786 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:09:24] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 19:09:25,120 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:09:25] "POST /predict HTTP/1.1" 200 -
+2025-06-02 19:09:41,656 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:09:41] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 19:09:42,071 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:09:42] "POST /predict HTTP/1.1" 200 -
+2025-06-02 19:10:35,483 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:10:35] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 19:10:35,950 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:10:35] "POST /predict HTTP/1.1" 200 -
+2025-06-02 19:11:35,163 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:11:35] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 19:11:35,563 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:11:35] "POST /predict HTTP/1.1" 200 -
+2025-06-02 19:14:56,689 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:14:56] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 19:14:57,042 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:14:57] "POST /predict HTTP/1.1" 200 -
+2025-06-02 19:18:49,887 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:18:49] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 19:18:50,227 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:18:50] "POST /predict HTTP/1.1" 200 -
+2025-06-02 19:27:05,643 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:27:05] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 19:27:05,994 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:27:05] "POST /predict HTTP/1.1" 200 -
+2025-06-02 19:39:49,668 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:39:49] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 19:39:50,010 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:39:50] "POST /predict HTTP/1.1" 200 -
+2025-06-02 19:47:34,320 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:47:34] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 19:47:34,684 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:47:34] "POST /predict HTTP/1.1" 200 -
+2025-06-02 19:52:01,453 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:52:01] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 19:52:01,823 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 19:52:01] "POST /predict HTTP/1.1" 200 -
+2025-06-02 19:57:51,260 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 19:57:53,186 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 19:58:04,907 - model - INFO - Using device: cpu
+2025-06-02 19:58:04,910 - model - INFO - Loading data...
+2025-06-02 19:58:06,237 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 19:58:06,238 - model - INFO - Preprocessing data...
+2025-06-02 19:58:10,273 - model - INFO - Data preprocessing completed
+2025-06-02 19:58:10,280 - model - INFO - Creating patient graph...
+2025-06-02 19:58:11,605 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 19:58:46,986 - model - INFO - Using device: cpu
+2025-06-02 19:58:46,989 - model - INFO - Loading data...
+2025-06-02 19:58:48,106 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 19:58:48,107 - model - INFO - Preprocessing data...
+2025-06-02 19:58:51,087 - model - INFO - Data preprocessing completed
+2025-06-02 19:58:51,093 - model - INFO - Creating patient graph...
+2025-06-02 19:58:52,310 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 20:02:38,131 - model - INFO - Using device: cpu
+2025-06-02 20:02:38,134 - model - INFO - Loading data...
+2025-06-02 20:02:39,242 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 20:02:39,242 - model - INFO - Preprocessing data...
+2025-06-02 20:02:42,904 - model - INFO - Data preprocessing completed
+2025-06-02 20:02:42,912 - model - INFO - Creating patient graph...
+2025-06-02 20:02:44,142 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 20:02:44,399 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-02 20:02:44,400 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 20:02:44,402 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 20:02:55,990 - model - INFO - Using device: cpu
+2025-06-02 20:02:55,993 - model - INFO - Loading data...
+2025-06-02 20:02:57,200 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 20:02:57,201 - model - INFO - Preprocessing data...
+2025-06-02 20:03:01,170 - model - INFO - Data preprocessing completed
+2025-06-02 20:03:01,179 - model - INFO - Creating patient graph...
+2025-06-02 20:03:02,416 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 20:03:02,663 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 20:03:02,667 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 20:03:03,416 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:03:03] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 20:03:03,503 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:03:03] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:15:04,053 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-02 20:15:05,332 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 20:20:08,634 - model - INFO - Using device: cpu
+2025-06-02 20:20:08,637 - model - INFO - Loading data...
+2025-06-02 20:20:09,911 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 20:20:09,911 - model - INFO - Preprocessing data...
+2025-06-02 20:20:12,605 - model - INFO - Data preprocessing completed
+2025-06-02 20:20:12,610 - model - INFO - Creating patient graph...
+2025-06-02 20:20:13,511 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 20:20:13,736 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-02 20:20:13,736 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 20:20:13,739 - werkzeug - INFO -  * Restarting with stat
+2025-06-02 20:20:23,121 - model - INFO - Using device: cpu
+2025-06-02 20:20:23,123 - model - INFO - Loading data...
+2025-06-02 20:20:24,025 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-02 20:20:24,025 - model - INFO - Preprocessing data...
+2025-06-02 20:20:26,802 - model - INFO - Data preprocessing completed
+2025-06-02 20:20:26,808 - model - INFO - Creating patient graph...
+2025-06-02 20:20:27,761 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-02 20:20:27,963 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 20:20:27,967 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-02 20:20:28,586 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:20:28] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 20:20:28,660 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:20:28] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:21:52,441 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:21:52] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 20:21:52,750 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:21:52] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:23:01,717 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:23:01] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 20:23:02,051 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:23:02] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:26:40,626 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:26:40] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 20:26:40,933 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:26:40] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:26:54,057 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:26:54] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 20:26:54,412 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:26:54] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:27:04,584 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:27:04] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 20:27:04,950 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:27:04] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:36:21,364 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:36:21] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 20:36:21,669 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:36:21] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:36:29,388 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:36:29] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 20:36:29,746 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:36:29] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:36:33,151 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:36:33] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:36:42,206 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:36:42] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 20:36:42,527 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:36:42] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:37:08,362 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:37:08] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 20:37:08,733 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:37:08] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:37:10,431 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:37:10] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:37:18,626 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:37:18] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 20:37:18,941 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:37:18] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:37:20,755 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:37:20] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:39:12,870 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:39:12] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 20:39:13,172 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:39:13] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:46:02,227 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:46:02] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 20:46:02,562 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:46:02] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:46:03,370 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:46:03] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:46:21,938 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:46:21] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 20:46:22,276 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:46:22] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:46:23,147 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:46:23] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:46:36,804 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:46:36] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-02 20:46:37,147 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:46:37] "POST /predict HTTP/1.1" 200 -
+2025-06-02 20:46:39,404 - werkzeug - INFO - 127.0.0.1 - - [02/Jun/2025 20:46:39] "POST /predict HTTP/1.1" 200 -
+2025-06-03 10:48:04,040 - model - INFO - Using device: cpu
+2025-06-03 10:48:04,045 - model - INFO - Loading data...
+2025-06-03 10:48:04,982 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 10:48:04,982 - model - INFO - Preprocessing data...
+2025-06-03 10:48:07,831 - model - INFO - Data preprocessing completed
+2025-06-03 10:48:07,837 - model - INFO - Creating patient graph...
+2025-06-03 10:48:08,875 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 10:48:09,343 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-03 10:48:09,343 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-03 10:48:09,347 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 10:48:18,803 - model - INFO - Using device: cpu
+2025-06-03 10:48:18,806 - model - INFO - Loading data...
+2025-06-03 10:48:19,708 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 10:48:19,708 - model - INFO - Preprocessing data...
+2025-06-03 10:48:22,726 - model - INFO - Data preprocessing completed
+2025-06-03 10:48:22,732 - model - INFO - Creating patient graph...
+2025-06-03 10:48:23,859 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 10:48:24,096 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 10:48:24,104 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 10:48:43,416 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 10:48:43] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 10:48:43,822 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 10:48:43] "POST /predict HTTP/1.1" 200 -
+2025-06-03 11:07:00,260 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 11:07:01,679 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 11:15:39,524 - model - INFO - Using device: cpu
+2025-06-03 11:15:39,528 - model - INFO - Loading data...
+2025-06-03 11:15:40,829 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 11:15:40,829 - model - INFO - Preprocessing data...
+2025-06-03 11:15:44,487 - model - INFO - Data preprocessing completed
+2025-06-03 11:15:44,497 - model - INFO - Creating patient graph...
+2025-06-03 11:15:45,732 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 11:20:54,255 - model - INFO - Using device: cpu
+2025-06-03 11:20:54,259 - model - INFO - Loading data...
+2025-06-03 11:20:55,424 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 11:20:55,424 - model - INFO - Preprocessing data...
+2025-06-03 11:20:58,882 - model - INFO - Data preprocessing completed
+2025-06-03 11:20:58,892 - model - INFO - Creating patient graph...
+2025-06-03 11:21:00,254 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 11:21:00,607 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-03 11:21:00,607 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-03 11:21:00,610 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 11:21:12,411 - model - INFO - Using device: cpu
+2025-06-03 11:21:12,414 - model - INFO - Loading data...
+2025-06-03 11:21:13,675 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 11:21:13,676 - model - INFO - Preprocessing data...
+2025-06-03 11:21:17,595 - model - INFO - Data preprocessing completed
+2025-06-03 11:21:17,604 - model - INFO - Creating patient graph...
+2025-06-03 11:21:18,927 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 11:21:19,240 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 11:21:19,250 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 11:21:21,627 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:21:21] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 11:21:21,980 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:21:21] "POST /predict HTTP/1.1" 200 -
+2025-06-03 11:21:26,784 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:21:26] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 11:21:27,165 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:21:27] "POST /predict HTTP/1.1" 200 -
+2025-06-03 11:21:30,386 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:21:30] "POST /predict HTTP/1.1" 200 -
+2025-06-03 11:21:32,658 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:21:32] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 11:21:32,988 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:21:32] "POST /predict HTTP/1.1" 200 -
+2025-06-03 11:52:10,136 - model - INFO - Using device: cpu
+2025-06-03 11:52:10,139 - model - INFO - Loading data...
+2025-06-03 11:52:11,080 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 11:52:11,081 - model - INFO - Preprocessing data...
+2025-06-03 11:52:13,938 - model - INFO - Data preprocessing completed
+2025-06-03 11:52:13,948 - model - INFO - Creating patient graph...
+2025-06-03 11:52:14,910 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 11:52:15,208 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-03 11:52:15,208 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-03 11:52:15,211 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 11:52:26,231 - model - INFO - Using device: cpu
+2025-06-03 11:52:26,235 - model - INFO - Loading data...
+2025-06-03 11:52:27,373 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 11:52:27,373 - model - INFO - Preprocessing data...
+2025-06-03 11:52:31,257 - model - INFO - Data preprocessing completed
+2025-06-03 11:52:31,265 - model - INFO - Creating patient graph...
+2025-06-03 11:52:32,459 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 11:52:32,712 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 11:52:32,716 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 11:52:33,073 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:52:33] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 11:52:33,165 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:52:33] "POST /predict HTTP/1.1" 200 -
+2025-06-03 11:53:38,690 - model - INFO - Using device: cpu
+2025-06-03 11:53:38,694 - model - INFO - Loading data...
+2025-06-03 11:53:39,935 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 11:53:39,935 - model - INFO - Preprocessing data...
+2025-06-03 11:53:43,463 - model - INFO - Data preprocessing completed
+2025-06-03 11:53:43,468 - model - INFO - Creating patient graph...
+2025-06-03 11:53:44,553 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 11:53:44,866 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-03 11:53:44,867 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-03 11:53:44,871 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 11:53:55,647 - model - INFO - Using device: cpu
+2025-06-03 11:53:55,650 - model - INFO - Loading data...
+2025-06-03 11:53:56,662 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 11:53:56,662 - model - INFO - Preprocessing data...
+2025-06-03 11:54:00,043 - model - INFO - Data preprocessing completed
+2025-06-03 11:54:00,053 - model - INFO - Creating patient graph...
+2025-06-03 11:54:01,194 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 11:54:01,452 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 11:54:01,457 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 11:54:01,819 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:54:01] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 11:54:02,011 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:54:02] "POST /predict HTTP/1.1" 200 -
+2025-06-03 11:54:05,429 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:54:05] "OPTIONS /get_metric_data HTTP/1.1" 200 -
+2025-06-03 11:54:05,790 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:54:05] "POST /get_metric_data HTTP/1.1" 200 -
+2025-06-03 11:54:16,651 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:54:16] "OPTIONS /get_metric_data HTTP/1.1" 200 -
+2025-06-03 11:54:17,046 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:54:17] "POST /get_metric_data HTTP/1.1" 200 -
+2025-06-03 11:54:22,319 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:54:22] "OPTIONS /get_metric_data HTTP/1.1" 200 -
+2025-06-03 11:54:22,733 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:54:22] "POST /get_metric_data HTTP/1.1" 200 -
+2025-06-03 11:54:27,169 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:54:27] "POST /get_metric_data HTTP/1.1" 200 -
+2025-06-03 11:56:59,604 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:56:59] "OPTIONS /get_metric_data HTTP/1.1" 200 -
+2025-06-03 11:56:59,932 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:56:59] "POST /get_metric_data HTTP/1.1" 200 -
+2025-06-03 11:58:05,092 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:58:05] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 11:58:05,428 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 11:58:05] "POST /predict HTTP/1.1" 200 -
+2025-06-03 12:01:34,024 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 12:01:34] "OPTIONS /get_metric_data HTTP/1.1" 200 -
+2025-06-03 12:01:34,356 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 12:01:34] "POST /get_metric_data HTTP/1.1" 200 -
+2025-06-03 14:58:11,393 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 14:58:13,687 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 15:03:05,330 - model - INFO - Using device: cpu
+2025-06-03 15:03:05,334 - model - INFO - Loading data...
+2025-06-03 15:03:06,905 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 15:03:06,906 - model - INFO - Preprocessing data...
+2025-06-03 15:03:11,441 - model - INFO - Data preprocessing completed
+2025-06-03 15:03:11,451 - model - INFO - Creating patient graph...
+2025-06-03 15:03:12,773 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 15:03:13,172 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-03 15:03:13,173 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-03 15:03:13,176 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 15:03:24,586 - model - INFO - Using device: cpu
+2025-06-03 15:03:24,590 - model - INFO - Loading data...
+2025-06-03 15:03:25,972 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 15:03:25,972 - model - INFO - Preprocessing data...
+2025-06-03 15:03:29,972 - model - INFO - Data preprocessing completed
+2025-06-03 15:03:29,979 - model - INFO - Creating patient graph...
+2025-06-03 15:03:31,221 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 15:03:31,493 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 15:03:31,504 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 15:12:15,502 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 15:12:16,974 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 15:12:28,168 - model - INFO - Using device: cpu
+2025-06-03 15:12:28,171 - model - INFO - Loading data...
+2025-06-03 15:12:29,153 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 15:12:29,153 - model - INFO - Preprocessing data...
+2025-06-03 15:12:32,214 - model - INFO - Data preprocessing completed
+2025-06-03 15:12:32,220 - model - INFO - Creating patient graph...
+2025-06-03 15:12:33,288 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 15:12:33,571 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 15:12:33,575 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 15:16:00,355 - model - INFO - Using device: cpu
+2025-06-03 15:16:00,359 - model - INFO - Loading data...
+2025-06-03 15:16:01,503 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 15:16:01,503 - model - INFO - Preprocessing data...
+2025-06-03 15:16:05,210 - model - INFO - Data preprocessing completed
+2025-06-03 15:16:05,217 - model - INFO - Creating patient graph...
+2025-06-03 15:16:06,507 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 15:16:06,867 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-03 15:16:06,868 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-03 15:16:06,871 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 15:16:22,583 - model - INFO - Using device: cpu
+2025-06-03 15:16:22,586 - model - INFO - Loading data...
+2025-06-03 15:16:23,830 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 15:16:23,831 - model - INFO - Preprocessing data...
+2025-06-03 15:16:27,732 - model - INFO - Data preprocessing completed
+2025-06-03 15:16:27,740 - model - INFO - Creating patient graph...
+2025-06-03 15:16:29,176 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 15:16:29,459 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 15:16:29,465 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 15:16:38,049 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:16:38] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 15:16:38,504 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:16:38] "POST /predict HTTP/1.1" 200 -
+2025-06-03 15:20:53,706 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 15:20:55,288 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 15:21:06,369 - model - INFO - Using device: cpu
+2025-06-03 15:21:06,372 - model - INFO - Loading data...
+2025-06-03 15:21:07,358 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 15:21:07,359 - model - INFO - Preprocessing data...
+2025-06-03 15:21:10,597 - model - INFO - Data preprocessing completed
+2025-06-03 15:21:10,604 - model - INFO - Creating patient graph...
+2025-06-03 15:21:11,766 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 15:21:12,052 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 15:21:12,057 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 15:21:12,404 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:21:12] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 15:21:12,507 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:21:12] "POST /predict HTTP/1.1" 200 -
+2025-06-03 15:21:46,209 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:21:46] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 15:21:46,553 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:21:46] "POST /predict HTTP/1.1" 200 -
+2025-06-03 15:49:48,097 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 15:49:49,678 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 15:50:00,276 - model - INFO - Using device: cpu
+2025-06-03 15:50:00,279 - model - INFO - Loading data...
+2025-06-03 15:50:01,264 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 15:50:01,265 - model - INFO - Preprocessing data...
+2025-06-03 15:50:04,453 - model - INFO - Data preprocessing completed
+2025-06-03 15:50:04,458 - model - INFO - Creating patient graph...
+2025-06-03 15:50:05,517 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 15:50:05,762 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 15:50:05,768 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 15:52:49,992 - model - INFO - Using device: cpu
+2025-06-03 15:52:49,994 - model - INFO - Loading data...
+2025-06-03 15:52:50,875 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 15:52:50,875 - model - INFO - Preprocessing data...
+2025-06-03 15:52:53,690 - model - INFO - Data preprocessing completed
+2025-06-03 15:52:53,695 - model - INFO - Creating patient graph...
+2025-06-03 15:52:54,652 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 15:52:54,917 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-03 15:52:54,917 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-03 15:52:54,920 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 15:53:04,353 - model - INFO - Using device: cpu
+2025-06-03 15:53:04,355 - model - INFO - Loading data...
+2025-06-03 15:53:05,240 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 15:53:05,240 - model - INFO - Preprocessing data...
+2025-06-03 15:53:08,261 - model - INFO - Data preprocessing completed
+2025-06-03 15:53:08,267 - model - INFO - Creating patient graph...
+2025-06-03 15:53:09,336 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 15:53:09,613 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 15:53:09,618 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 15:55:21,625 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:55:21] "[33mOPTIONS /predict HTTP/1.1[0m" 404 -
+2025-06-03 15:57:43,456 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 15:57:45,370 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 15:57:56,645 - model - INFO - Using device: cpu
+2025-06-03 15:57:56,648 - model - INFO - Loading data...
+2025-06-03 15:57:57,713 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 15:57:57,714 - model - INFO - Preprocessing data...
+2025-06-03 15:58:00,952 - model - INFO - Data preprocessing completed
+2025-06-03 15:58:00,958 - model - INFO - Creating patient graph...
+2025-06-03 15:58:02,048 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 15:58:02,295 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 15:58:02,299 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 15:58:05,840 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:58:05] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 15:58:06,209 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:58:06] "POST /predict HTTP/1.1" 200 -
+2025-06-03 15:58:55,005 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:58:55] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 15:58:55,390 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:58:55] "POST /predict HTTP/1.1" 200 -
+2025-06-03 15:58:57,761 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:58:57] "POST /predict HTTP/1.1" 200 -
+2025-06-03 15:59:00,965 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:59:00] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 15:59:01,298 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:59:01] "POST /predict HTTP/1.1" 200 -
+2025-06-03 15:59:31,451 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:59:31] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 15:59:31,825 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:59:31] "POST /predict HTTP/1.1" 200 -
+2025-06-03 15:59:43,310 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:59:43] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 15:59:43,729 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:59:43] "POST /predict HTTP/1.1" 200 -
+2025-06-03 15:59:48,946 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:59:48] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 15:59:49,367 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 15:59:49] "POST /predict HTTP/1.1" 200 -
+2025-06-03 16:00:18,865 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 16:00:18] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 16:00:19,275 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 16:00:19] "POST /predict HTTP/1.1" 200 -
+2025-06-03 16:00:25,813 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 16:00:25] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 16:00:26,203 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 16:00:26] "POST /predict HTTP/1.1" 200 -
+2025-06-03 17:46:00,153 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 17:46:00] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 17:46:00,494 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 17:46:00] "POST /predict HTTP/1.1" 200 -
+2025-06-03 18:08:02,315 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 18:08:03,833 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 18:08:15,380 - model - INFO - Using device: cpu
+2025-06-03 18:08:15,383 - model - INFO - Loading data...
+2025-06-03 18:08:16,355 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 18:08:16,356 - model - INFO - Preprocessing data...
+2025-06-03 18:08:19,700 - model - INFO - Data preprocessing completed
+2025-06-03 18:08:19,706 - model - INFO - Creating patient graph...
+2025-06-03 18:08:20,822 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 18:08:21,057 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 18:08:21,062 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 18:08:51,018 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 18:08:52,331 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 18:09:03,106 - model - INFO - Using device: cpu
+2025-06-03 18:09:03,109 - model - INFO - Loading data...
+2025-06-03 18:09:04,105 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 18:09:04,105 - model - INFO - Preprocessing data...
+2025-06-03 18:09:07,456 - model - INFO - Data preprocessing completed
+2025-06-03 18:09:07,463 - model - INFO - Creating patient graph...
+2025-06-03 18:09:08,592 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 18:09:08,846 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 18:09:08,851 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 18:09:17,043 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:09:17] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 18:09:17,452 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:09:17] "POST /predict HTTP/1.1" 200 -
+2025-06-03 18:09:25,749 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:09:25] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 18:09:26,170 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:09:26] "POST /predict HTTP/1.1" 200 -
+2025-06-03 18:12:52,481 - model - INFO - Using device: cpu
+2025-06-03 18:12:52,484 - model - INFO - Loading data...
+2025-06-03 18:12:53,409 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 18:12:53,410 - model - INFO - Preprocessing data...
+2025-06-03 18:12:56,561 - model - INFO - Data preprocessing completed
+2025-06-03 18:12:56,568 - model - INFO - Creating patient graph...
+2025-06-03 18:12:57,623 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 18:12:57,864 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-03 18:12:57,864 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-03 18:12:57,867 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 18:13:08,003 - model - INFO - Using device: cpu
+2025-06-03 18:13:08,006 - model - INFO - Loading data...
+2025-06-03 18:13:09,004 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 18:13:09,004 - model - INFO - Preprocessing data...
+2025-06-03 18:13:12,265 - model - INFO - Data preprocessing completed
+2025-06-03 18:13:12,271 - model - INFO - Creating patient graph...
+2025-06-03 18:13:13,296 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 18:13:13,514 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 18:13:13,519 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 18:14:59,793 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:14:59] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 18:15:00,182 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:15:00] "POST /predict HTTP/1.1" 200 -
+2025-06-03 18:16:33,578 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:16:33] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 18:16:33,960 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:16:33] "POST /predict HTTP/1.1" 200 -
+2025-06-03 18:19:52,830 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:19:52] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 18:19:53,228 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:19:53] "POST /predict HTTP/1.1" 200 -
+2025-06-03 18:25:26,581 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:25:26] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 18:25:26,931 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:25:26] "POST /predict HTTP/1.1" 200 -
+2025-06-03 18:26:12,439 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:26:12] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 18:26:12,835 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:26:12] "POST /predict HTTP/1.1" 200 -
+2025-06-03 18:40:04,736 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 18:40:05,981 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 18:40:15,428 - model - INFO - Using device: cpu
+2025-06-03 18:40:15,431 - model - INFO - Loading data...
+2025-06-03 18:40:16,455 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 18:40:16,455 - model - INFO - Preprocessing data...
+2025-06-03 18:40:19,734 - model - INFO - Data preprocessing completed
+2025-06-03 18:40:19,741 - model - INFO - Creating patient graph...
+2025-06-03 18:40:20,913 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 18:40:21,216 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 18:40:21,219 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 18:40:41,154 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 18:40:42,296 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 18:40:51,391 - model - INFO - Using device: cpu
+2025-06-03 18:40:51,394 - model - INFO - Loading data...
+2025-06-03 18:40:52,269 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 18:40:52,270 - model - INFO - Preprocessing data...
+2025-06-03 18:40:55,183 - model - INFO - Data preprocessing completed
+2025-06-03 18:40:55,188 - model - INFO - Creating patient graph...
+2025-06-03 18:40:56,111 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 18:40:56,422 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 18:40:56,426 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 18:41:04,932 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:41:04] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 18:41:05,279 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:41:05] "POST /predict HTTP/1.1" 200 -
+2025-06-03 18:41:54,522 - model - INFO - Using device: cpu
+2025-06-03 18:41:54,525 - model - INFO - Loading data...
+2025-06-03 18:41:55,386 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 18:41:55,386 - model - INFO - Preprocessing data...
+2025-06-03 18:41:58,308 - model - INFO - Data preprocessing completed
+2025-06-03 18:41:58,314 - model - INFO - Creating patient graph...
+2025-06-03 18:41:59,259 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 18:41:59,581 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-03 18:41:59,582 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-03 18:41:59,584 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 18:42:08,665 - model - INFO - Using device: cpu
+2025-06-03 18:42:08,667 - model - INFO - Loading data...
+2025-06-03 18:42:09,969 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 18:42:09,970 - model - INFO - Preprocessing data...
+2025-06-03 18:42:13,073 - model - INFO - Data preprocessing completed
+2025-06-03 18:42:13,079 - model - INFO - Creating patient graph...
+2025-06-03 18:42:13,984 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 18:42:14,258 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 18:42:14,262 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 18:42:22,439 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:42:22] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 18:42:22,788 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:42:22] "POST /predict HTTP/1.1" 200 -
+2025-06-03 18:42:34,332 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 18:42:35,380 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 18:42:44,136 - model - INFO - Using device: cpu
+2025-06-03 18:42:44,138 - model - INFO - Loading data...
+2025-06-03 18:42:44,947 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 18:42:44,948 - model - INFO - Preprocessing data...
+2025-06-03 18:42:48,081 - model - INFO - Data preprocessing completed
+2025-06-03 18:42:48,087 - model - INFO - Creating patient graph...
+2025-06-03 18:42:49,141 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 18:42:49,342 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 18:42:49,347 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 18:44:35,109 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:44:35] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 18:44:35,465 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:44:35] "POST /predict HTTP/1.1" 200 -
+2025-06-03 18:48:26,223 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 18:48:27,391 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 18:48:43,459 - model - INFO - Using device: cpu
+2025-06-03 18:48:43,461 - model - INFO - Loading data...
+2025-06-03 18:48:44,324 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 18:48:44,324 - model - INFO - Preprocessing data...
+2025-06-03 18:48:47,110 - model - INFO - Data preprocessing completed
+2025-06-03 18:48:47,115 - model - INFO - Creating patient graph...
+2025-06-03 18:48:48,096 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 18:48:48,318 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-03 18:48:48,318 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-03 18:48:48,320 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 18:48:56,911 - model - INFO - Using device: cpu
+2025-06-03 18:48:56,914 - model - INFO - Loading data...
+2025-06-03 18:48:57,742 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 18:48:57,743 - model - INFO - Preprocessing data...
+2025-06-03 18:49:00,487 - model - INFO - Data preprocessing completed
+2025-06-03 18:49:00,492 - model - INFO - Creating patient graph...
+2025-06-03 18:49:01,439 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 18:49:01,633 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 18:49:01,637 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 18:49:15,381 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:49:15] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 18:49:15,763 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:49:15] "POST /predict HTTP/1.1" 200 -
+2025-06-03 18:52:45,608 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:52:45] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 18:52:45,996 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:52:45] "POST /predict HTTP/1.1" 200 -
+2025-06-03 18:52:55,242 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:52:55] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 18:52:55,665 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:52:55] "POST /predict HTTP/1.1" 200 -
+2025-06-03 18:53:48,523 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:53:48] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 18:53:48,951 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:53:48] "POST /predict HTTP/1.1" 200 -
+2025-06-03 18:56:44,943 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:56:44] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 18:56:45,330 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:56:45] "POST /predict HTTP/1.1" 200 -
+2025-06-03 18:58:58,014 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:58:58] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 18:58:58,394 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 18:58:58] "POST /predict HTTP/1.1" 200 -
+2025-06-03 19:00:11,821 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:00:11] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 19:00:12,196 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:00:12] "POST /predict HTTP/1.1" 200 -
+2025-06-03 19:00:55,893 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:00:55] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 19:00:56,319 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:00:56] "POST /predict HTTP/1.1" 200 -
+2025-06-03 19:01:10,457 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:01:10] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 19:01:10,887 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:01:10] "POST /predict HTTP/1.1" 200 -
+2025-06-03 19:01:19,353 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:01:19] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 19:01:19,772 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:01:19] "POST /predict HTTP/1.1" 200 -
+2025-06-03 19:21:04,215 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:21:04] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 19:21:04,589 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:21:04] "POST /predict HTTP/1.1" 200 -
+2025-06-03 19:21:14,671 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:21:14] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 19:21:15,117 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:21:15] "POST /predict HTTP/1.1" 200 -
+2025-06-03 19:27:26,683 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:27:26] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 19:27:27,065 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:27:27] "POST /predict HTTP/1.1" 200 -
+2025-06-03 19:30:58,129 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:30:58] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 19:30:58,519 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:30:58] "POST /predict HTTP/1.1" 200 -
+2025-06-03 19:35:02,873 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:35:02] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 19:35:03,329 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:35:03] "POST /predict HTTP/1.1" 200 -
+2025-06-03 19:36:47,727 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:36:47] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 19:36:48,139 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:36:48] "POST /predict HTTP/1.1" 200 -
+2025-06-03 19:39:01,035 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:39:01] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 19:39:01,430 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:39:01] "POST /predict HTTP/1.1" 200 -
+2025-06-03 19:39:08,742 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:39:08] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 19:39:09,221 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:39:09] "POST /predict HTTP/1.1" 200 -
+2025-06-03 19:40:00,701 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:40:00] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 19:40:01,172 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:40:01] "POST /predict HTTP/1.1" 200 -
+2025-06-03 19:57:11,956 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:57:11] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 19:57:12,465 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 19:57:12] "POST /predict HTTP/1.1" 200 -
+2025-06-03 19:59:32,729 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 19:59:34,986 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 20:00:01,358 - model - INFO - Using device: cpu
+2025-06-03 20:00:01,361 - model - INFO - Loading data...
+2025-06-03 20:00:02,643 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 20:00:02,644 - model - INFO - Preprocessing data...
+2025-06-03 20:00:05,962 - model - INFO - Data preprocessing completed
+2025-06-03 20:00:05,973 - model - INFO - Creating patient graph...
+2025-06-03 20:00:07,149 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 20:00:07,460 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 20:00:07,464 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 20:00:16,326 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:00:16] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 20:00:16,871 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:00:16] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-06-03 20:01:33,079 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 20:01:34,629 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 20:01:45,490 - model - INFO - Using device: cpu
+2025-06-03 20:01:45,493 - model - INFO - Loading data...
+2025-06-03 20:01:46,507 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 20:01:46,507 - model - INFO - Preprocessing data...
+2025-06-03 20:01:49,813 - model - INFO - Data preprocessing completed
+2025-06-03 20:01:49,818 - model - INFO - Creating patient graph...
+2025-06-03 20:01:50,976 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 20:01:51,234 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 20:01:51,239 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 20:01:57,382 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 20:01:58,836 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 20:02:09,643 - model - INFO - Using device: cpu
+2025-06-03 20:02:09,646 - model - INFO - Loading data...
+2025-06-03 20:02:10,692 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 20:02:10,693 - model - INFO - Preprocessing data...
+2025-06-03 20:02:14,134 - model - INFO - Data preprocessing completed
+2025-06-03 20:02:14,142 - model - INFO - Creating patient graph...
+2025-06-03 20:02:15,258 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 20:02:15,495 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 20:02:15,500 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 20:02:38,078 - model - INFO - Using device: cpu
+2025-06-03 20:02:38,081 - model - INFO - Loading data...
+2025-06-03 20:02:38,994 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 20:02:38,995 - model - INFO - Preprocessing data...
+2025-06-03 20:02:42,675 - model - INFO - Data preprocessing completed
+2025-06-03 20:02:42,683 - model - INFO - Creating patient graph...
+2025-06-03 20:02:43,959 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 20:02:44,281 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-03 20:02:44,282 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-03 20:02:44,287 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 20:02:54,779 - model - INFO - Using device: cpu
+2025-06-03 20:02:54,781 - model - INFO - Loading data...
+2025-06-03 20:02:55,904 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 20:02:55,905 - model - INFO - Preprocessing data...
+2025-06-03 20:02:59,613 - model - INFO - Data preprocessing completed
+2025-06-03 20:02:59,620 - model - INFO - Creating patient graph...
+2025-06-03 20:03:00,854 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 20:03:01,144 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 20:03:01,148 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 20:03:01,499 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:03:01] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 20:03:01,672 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:03:01] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-06-03 20:03:20,117 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 20:03:21,798 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 20:03:33,077 - model - INFO - Using device: cpu
+2025-06-03 20:03:33,080 - model - INFO - Loading data...
+2025-06-03 20:03:34,054 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 20:03:34,054 - model - INFO - Preprocessing data...
+2025-06-03 20:03:37,629 - model - INFO - Data preprocessing completed
+2025-06-03 20:03:37,635 - model - INFO - Creating patient graph...
+2025-06-03 20:03:38,841 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 20:03:39,112 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 20:03:39,117 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 20:03:39,463 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:03:39] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 20:03:39,465 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:03:39] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 20:03:40,115 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:03:40] "POST /predict HTTP/1.1" 200 -
+2025-06-03 20:03:40,117 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:03:40] "POST /predict HTTP/1.1" 200 -
+2025-06-03 20:19:55,009 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 20:19:56,500 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 20:20:07,682 - model - INFO - Using device: cpu
+2025-06-03 20:20:07,685 - model - INFO - Loading data...
+2025-06-03 20:20:08,857 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 20:20:08,857 - model - INFO - Preprocessing data...
+2025-06-03 20:20:12,353 - model - INFO - Data preprocessing completed
+2025-06-03 20:20:12,359 - model - INFO - Creating patient graph...
+2025-06-03 20:20:13,543 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 20:20:13,808 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 20:20:13,812 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 20:20:34,596 - model - INFO - Using device: cpu
+2025-06-03 20:20:34,599 - model - INFO - Loading data...
+2025-06-03 20:20:35,503 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 20:20:35,503 - model - INFO - Preprocessing data...
+2025-06-03 20:20:38,397 - model - INFO - Data preprocessing completed
+2025-06-03 20:20:38,405 - model - INFO - Creating patient graph...
+2025-06-03 20:20:39,553 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 20:20:39,989 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-03 20:20:39,989 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-03 20:20:39,992 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 20:20:49,788 - model - INFO - Using device: cpu
+2025-06-03 20:20:49,791 - model - INFO - Loading data...
+2025-06-03 20:20:50,666 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 20:20:50,666 - model - INFO - Preprocessing data...
+2025-06-03 20:20:53,621 - model - INFO - Data preprocessing completed
+2025-06-03 20:20:53,627 - model - INFO - Creating patient graph...
+2025-06-03 20:20:54,692 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 20:20:54,946 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 20:20:54,952 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 20:21:13,401 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:21:13] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 20:21:13,884 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:21:13] "POST /predict HTTP/1.1" 200 -
+2025-06-03 20:21:55,453 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:21:55] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 20:21:55,961 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:21:55] "POST /predict HTTP/1.1" 200 -
+2025-06-03 20:22:33,636 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:22:33] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 20:22:34,134 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:22:34] "POST /predict HTTP/1.1" 200 -
+2025-06-03 20:22:44,495 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:22:44] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 20:22:45,032 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:22:45] "POST /predict HTTP/1.1" 200 -
+2025-06-03 20:22:46,917 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:22:46] "POST /predict HTTP/1.1" 200 -
+2025-06-03 20:22:50,531 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:22:50] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 20:22:50,979 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:22:50] "POST /predict HTTP/1.1" 200 -
+2025-06-03 20:22:52,735 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:22:52] "POST /predict HTTP/1.1" 200 -
+2025-06-03 20:23:37,935 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 20:23:39,643 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 20:23:50,202 - model - INFO - Using device: cpu
+2025-06-03 20:23:50,205 - model - INFO - Loading data...
+2025-06-03 20:23:51,135 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 20:23:51,135 - model - INFO - Preprocessing data...
+2025-06-03 20:23:54,224 - model - INFO - Data preprocessing completed
+2025-06-03 20:23:54,231 - model - INFO - Creating patient graph...
+2025-06-03 20:23:55,320 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 20:23:55,539 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 20:23:55,544 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 20:24:01,663 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:24:01] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 20:24:02,112 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:24:02] "POST /predict HTTP/1.1" 200 -
+2025-06-03 20:32:38,071 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 20:32:39,448 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 20:32:50,459 - model - INFO - Using device: cpu
+2025-06-03 20:32:50,462 - model - INFO - Loading data...
+2025-06-03 20:32:51,402 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 20:32:51,402 - model - INFO - Preprocessing data...
+2025-06-03 20:32:55,236 - model - INFO - Data preprocessing completed
+2025-06-03 20:32:55,242 - model - INFO - Creating patient graph...
+2025-06-03 20:32:56,398 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 20:32:56,672 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 20:32:56,675 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 20:34:17,901 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:34:17] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 20:34:18,362 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:34:18] "POST /predict HTTP/1.1" 200 -
+2025-06-03 20:34:33,986 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:34:33] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 20:34:34,482 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:34:34] "POST /predict HTTP/1.1" 200 -
+2025-06-03 20:34:40,003 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:34:40] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 20:34:40,570 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:34:40] "POST /predict HTTP/1.1" 200 -
+2025-06-03 20:34:53,687 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:34:53] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 20:34:54,233 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:34:54] "POST /predict HTTP/1.1" 200 -
+2025-06-03 20:35:02,343 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:35:02] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 20:35:02,847 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:35:02] "POST /predict HTTP/1.1" 200 -
+2025-06-03 20:50:28,311 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 20:50:29,686 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 20:50:41,441 - model - INFO - Using device: cpu
+2025-06-03 20:50:41,444 - model - INFO - Loading data...
+2025-06-03 20:50:42,380 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 20:50:42,381 - model - INFO - Preprocessing data...
+2025-06-03 20:50:45,677 - model - INFO - Data preprocessing completed
+2025-06-03 20:50:45,685 - model - INFO - Creating patient graph...
+2025-06-03 20:50:46,712 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 20:50:46,972 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 20:50:46,976 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 20:51:12,354 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:51:12] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 20:51:12,861 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:51:12] "POST /predict HTTP/1.1" 200 -
+2025-06-03 20:51:32,050 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:51:32] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 20:51:32,543 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:51:32] "POST /predict HTTP/1.1" 200 -
+2025-06-03 20:51:34,652 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:51:34] "POST /predict HTTP/1.1" 200 -
+2025-06-03 20:51:36,887 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 20:51:36] "POST /predict HTTP/1.1" 200 -
+2025-06-03 20:51:52,445 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\app.py', reloading
+2025-06-03 20:51:53,769 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 20:52:12,420 - model - INFO - Using device: cpu
+2025-06-03 20:52:12,423 - model - INFO - Loading data...
+2025-06-03 20:52:13,347 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 20:52:13,347 - model - INFO - Preprocessing data...
+2025-06-03 20:52:16,495 - model - INFO - Data preprocessing completed
+2025-06-03 20:52:16,501 - model - INFO - Creating patient graph...
+2025-06-03 20:52:17,514 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 20:52:17,811 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-03 20:52:17,812 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-03 20:52:17,817 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 20:52:28,359 - model - INFO - Using device: cpu
+2025-06-03 20:52:28,363 - model - INFO - Loading data...
+2025-06-03 20:52:29,677 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 20:52:29,678 - model - INFO - Preprocessing data...
+2025-06-03 20:52:33,555 - model - INFO - Data preprocessing completed
+2025-06-03 20:52:33,561 - model - INFO - Creating patient graph...
+2025-06-03 20:52:34,767 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 20:52:35,033 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 20:52:35,037 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 21:01:26,384 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 21:01:26] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 21:01:26,845 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 21:01:26] "POST /predict HTTP/1.1" 200 -
+2025-06-03 21:02:53,165 - model - INFO - Using device: cpu
+2025-06-03 21:02:53,168 - model - INFO - Loading data...
+2025-06-03 21:02:54,106 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 21:02:54,106 - model - INFO - Preprocessing data...
+2025-06-03 21:02:57,405 - model - INFO - Data preprocessing completed
+2025-06-03 21:02:57,410 - model - INFO - Creating patient graph...
+2025-06-03 21:02:58,575 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 21:02:58,884 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-03 21:02:58,884 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-03 21:02:58,888 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 21:03:09,483 - model - INFO - Using device: cpu
+2025-06-03 21:03:09,486 - model - INFO - Loading data...
+2025-06-03 21:03:10,481 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 21:03:10,482 - model - INFO - Preprocessing data...
+2025-06-03 21:03:13,798 - model - INFO - Data preprocessing completed
+2025-06-03 21:03:13,806 - model - INFO - Creating patient graph...
+2025-06-03 21:03:15,012 - model - INFO - Created graph with 1169 nodes and 0 edges
+2025-06-03 21:03:15,262 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 21:03:15,267 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 21:10:58,240 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 21:10:58] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 21:10:58,689 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 21:10:58] "POST /predict HTTP/1.1" 200 -
+2025-06-03 21:19:53,301 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Administrator\\Desktop\\WEB\\backend-python\\model.py', reloading
+2025-06-03 21:19:54,989 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 21:20:52,042 - model - INFO - Using device: cpu
+2025-06-03 21:20:52,045 - model - INFO - Loading data...
+2025-06-03 21:20:53,187 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 21:20:53,188 - model - INFO - Preprocessing data...
+2025-06-03 21:20:56,571 - model - INFO - Data preprocessing completed
+2025-06-03 21:20:56,577 - model - INFO - Creating patient graph...
+2025-06-03 21:20:57,699 - model - INFO - Created graph with 1169 nodes and 946 edges
+2025-06-03 21:20:57,950 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-03 21:20:57,950 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-03 21:20:57,953 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 21:21:08,032 - model - INFO - Using device: cpu
+2025-06-03 21:21:08,034 - model - INFO - Loading data...
+2025-06-03 21:21:08,926 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 21:21:08,926 - model - INFO - Preprocessing data...
+2025-06-03 21:21:11,852 - model - INFO - Data preprocessing completed
+2025-06-03 21:21:11,857 - model - INFO - Creating patient graph...
+2025-06-03 21:21:12,902 - model - INFO - Created graph with 1169 nodes and 946 edges
+2025-06-03 21:21:13,149 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 21:21:13,154 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 21:43:44,897 - model - INFO - Using device: cpu
+2025-06-03 21:43:44,899 - model - INFO - Loading data...
+2025-06-03 21:43:45,763 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 21:43:45,763 - model - INFO - Preprocessing data...
+2025-06-03 21:43:48,594 - model - INFO - Data preprocessing completed
+2025-06-03 21:46:43,544 - model - INFO - Using device: cpu
+2025-06-03 21:46:43,546 - model - INFO - Loading data...
+2025-06-03 21:46:44,406 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 21:46:44,407 - model - INFO - Preprocessing data...
+2025-06-03 21:46:47,274 - model - INFO - Data preprocessing completed
+2025-06-03 21:48:00,766 - model - INFO - Using device: cpu
+2025-06-03 21:48:00,768 - model - INFO - Loading data...
+2025-06-03 21:48:01,675 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 21:48:01,675 - model - INFO - Preprocessing data...
+2025-06-03 21:48:04,490 - model - INFO - Data preprocessing completed
+2025-06-03 21:48:04,497 - model - INFO - Creating enhanced patient graph...
+2025-06-03 21:48:05,521 - model - INFO - Adding random connections for 320 isolated nodes
+2025-06-03 21:48:05,524 - model - INFO - Enhanced graph created with 1169 nodes and 1138 family edges
+2025-06-03 21:48:05,797 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-03 21:48:05,797 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-03 21:48:05,801 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 21:48:15,255 - model - INFO - Using device: cpu
+2025-06-03 21:48:15,258 - model - INFO - Loading data...
+2025-06-03 21:48:16,134 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-03 21:48:16,134 - model - INFO - Preprocessing data...
+2025-06-03 21:48:18,960 - model - INFO - Data preprocessing completed
+2025-06-03 21:48:18,967 - model - INFO - Creating enhanced patient graph...
+2025-06-03 21:48:19,966 - model - INFO - Adding random connections for 320 isolated nodes
+2025-06-03 21:48:19,969 - model - INFO - Enhanced graph created with 1169 nodes and 1138 family edges
+2025-06-03 21:48:20,190 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 21:48:20,195 - werkzeug - INFO -  * Debugger PIN: 735-745-043
+2025-06-03 21:48:40,997 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 21:48:40] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 21:48:41,455 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 21:48:41] "POST /predict HTTP/1.1" 200 -
+2025-06-03 23:47:59,463 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 23:47:59] "OPTIONS /predict HTTP/1.1" 200 -
+2025-06-03 23:47:59,909 - werkzeug - INFO - 127.0.0.1 - - [03/Jun/2025 23:47:59] "POST /predict HTTP/1.1" 200 -
+2025-06-04 09:46:42,182 - model - INFO - Using device: cpu
+2025-06-04 09:46:42,185 - model - INFO - Loading data...
+2025-06-04 09:46:43,064 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-04 09:46:43,064 - model - INFO - Preprocessing data...
+2025-06-04 09:46:46,141 - model - INFO - Data preprocessing completed
+2025-06-04 09:46:46,147 - model - INFO - Creating enhanced patient graph...
+2025-06-04 09:46:47,339 - model - INFO - Adding random connections for 320 isolated nodes
+2025-06-04 09:46:47,344 - model - INFO - Enhanced graph created with 1169 nodes and 1138 family edges
+2025-06-04 09:46:47,682 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.39:5000
+2025-06-04 09:46:47,682 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-04 09:46:47,685 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 09:46:57,542 - model - INFO - Using device: cpu
+2025-06-04 09:46:57,544 - model - INFO - Loading data...
+2025-06-04 09:46:58,616 - model - INFO - Loaded 1169 patients, 141449 temporal records, 1138 parent relations
+2025-06-04 09:46:58,616 - model - INFO - Preprocessing data...
+2025-06-04 09:47:02,175 - model - INFO - Data preprocessing completed
+2025-06-04 09:47:02,182 - model - INFO - Creating enhanced patient graph...
+2025-06-04 09:47:03,221 - model - INFO - Adding random connections for 320 isolated nodes
+2025-06-04 09:47:03,224 - model - INFO - Enhanced graph created with 1169 nodes and 1138 family edges
+2025-06-04 09:47:03,481 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 09:47:03,492 - werkzeug - INFO -  * Debugger PIN: 735-745-043

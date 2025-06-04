@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "noEmit": false,              // ✅ either remove this line or make sure it's false
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+  },
+  "include": ["src"]
+}
