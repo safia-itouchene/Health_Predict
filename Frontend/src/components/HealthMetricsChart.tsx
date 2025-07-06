@@ -22,6 +22,7 @@ const HealthMetricsChart: React.FC<HealthMetricsChartProps> = ({ data }) => {
   const [chartData, setChartData] = useState<any>([]);
   const [metrics, setMetrics] = useState<string[]>([]);
   const [selectedMetricUnit, setSelectedMetricUnit] = useState<string>('');
+  const [hoveredPoint, setHoveredPoint] = useState<any>(null);
   
   useEffect(() => {
     // Extract unique metric names
@@ -56,13 +57,16 @@ const HealthMetricsChart: React.FC<HealthMetricsChartProps> = ({ data }) => {
   
   // Find min and max values for y-axis scaling
   const allValues = chartData.map((item: any) => item.value);
-  const minValue = allValues.length > 0 ? Math.min(...allValues) * 0.9 : 0;
-  const maxValue = allValues.length > 0 ? Math.max(...allValues) * 1.1 : 100;
+  const rawMin = allValues.length > 0 ? Math.min(...allValues) : 0;
+  const rawMax = allValues.length > 0 ? Math.max(...allValues) : 100;
+  const range = rawMax - rawMin;
+  const minValue = rawMin - range * 0.1;
+  const maxValue = rawMax + range * 0.1;
   
   // Calculate chart dimensions
   const chartWidth = 900;
   const chartHeight = 400;
-  const paddingX = 50;
+  const paddingX = 60;
   const paddingY = 40;
   const contentWidth = chartWidth - (paddingX * 2);
   const contentHeight = chartHeight - (paddingY * 2);
@@ -116,11 +120,11 @@ const HealthMetricsChart: React.FC<HealthMetricsChartProps> = ({ data }) => {
   const connectionPoints = generateConnectionLine();
 
   return (
-    <div className="h-full">
+    <div className="h-full p-4">
       <div className="mb-6 flex items-center justify-between">
         <div>
           <h2 className="text-xl font-semibold text-gray-800">Évolution des métriques de santé</h2>
-          <p className="text-sm text-gray-500">Historique des 6 derniers mois et prédictions futures</p>
+          <p className="text-sm text-gray-600 mt-1">Historique des 8 derniers mois et prédictions futures</p>
         </div>
         
         <div className="flex items-center space-x-2">
@@ -128,7 +132,7 @@ const HealthMetricsChart: React.FC<HealthMetricsChartProps> = ({ data }) => {
           <select
             value={selectedMetric}
             onChange={(e) => setSelectedMetric(e.target.value)}
-            className="border border-gray-300 rounded-md p-2 text-sm focus:ring-blue-500 focus:border-blue-500"
+            className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
           >
             {metrics.map(metric => (
               <option key={metric} value={metric}>{metric}</option>
@@ -137,8 +141,8 @@ const HealthMetricsChart: React.FC<HealthMetricsChartProps> = ({ data }) => {
         </div>
       </div>
       
-      <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-100 h-[500px] flex flex-col">
-        <div className="flex items-center space-x-6 mb-4 ml-12">
+      <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 h-[500px] flex flex-col">
+        <div className="flex items-center space-x-6 mb-4">
           <div className="flex items-center">
             <div className="w-3 h-3 rounded-full bg-blue-500 mr-2"></div>
             <span className="text-sm text-gray-700">Valeurs historiques</span>
@@ -148,8 +152,8 @@ const HealthMetricsChart: React.FC<HealthMetricsChartProps> = ({ data }) => {
             <span className="text-sm text-gray-700">Prédictions</span>
           </div>
           <div className="flex items-center">
-            <div className="w-3 h-0.5 bg-gray-400 mr-2"></div>
-            <span className="text-sm text-gray-700">Connexion</span>
+            <div className="w-4 h-0.5 bg-orange-400 mr-2"></div>
+            <span className="text-sm text-gray-700">Maintenant</span>
           </div>
         </div>
         
@@ -163,7 +167,7 @@ const HealthMetricsChart: React.FC<HealthMetricsChartProps> = ({ data }) => {
                 x2={chartWidth - paddingX} 
                 y2={chartHeight - paddingY} 
                 stroke="#e5e7eb" 
-                strokeWidth="1" 
+                strokeWidth="2" 
               />
               
               {/* Y-axis */}
@@ -173,7 +177,7 @@ const HealthMetricsChart: React.FC<HealthMetricsChartProps> = ({ data }) => {
                 x2={paddingX} 
                 y2={chartHeight - paddingY} 
                 stroke="#e5e7eb" 
-                strokeWidth="1" 
+                strokeWidth="2" 
               />
               
               {/* Horizontal grid lines */}
@@ -210,9 +214,9 @@ const HealthMetricsChart: React.FC<HealthMetricsChartProps> = ({ data }) => {
                   y1={paddingY} 
                   x2={paddingX + ((actualData.length - 1) / (chartData.length - 1)) * contentWidth} 
                   y2={chartHeight - paddingY} 
-                  stroke="#fbbf24" 
+                  stroke="#f59e0b" 
                   strokeWidth="2" 
-                  strokeDasharray="3,3"
+                  strokeDasharray="5,5"
                 />
               )}
               
@@ -238,9 +242,9 @@ const HealthMetricsChart: React.FC<HealthMetricsChartProps> = ({ data }) => {
                 <polyline 
                   points={connectionPoints} 
                   fill="none" 
-                  stroke="#6b7280" 
+                  stroke="#9ca3af" 
                   strokeWidth="2" 
-                  strokeDasharray="2,2"
+                  strokeDasharray="3,3"
                 />
               )}
               
@@ -261,7 +265,7 @@ const HealthMetricsChart: React.FC<HealthMetricsChartProps> = ({ data }) => {
                   fill="none" 
                   stroke="#8b5cf6" 
                   strokeWidth="3" 
-                  strokeDasharray="6,4" 
+                  strokeDasharray="8,4" 
                 />
               )}
               
@@ -271,18 +275,21 @@ const HealthMetricsChart: React.FC<HealthMetricsChartProps> = ({ data }) => {
                 const x = paddingX + (totalIndex / (chartData.length - 1)) * contentWidth;
                 const normalizedValue = (item.value - minValue) / (maxValue - minValue);
                 const y = chartHeight - paddingY - (normalizedValue * contentHeight);
+                const isHovered = hoveredPoint?.date === item.date && hoveredPoint?.type === 'actual';
+                
                 return (
                   <g key={`actual-${index}`}>
                     <circle 
                       cx={x} 
                       cy={y} 
-                      r="5" 
+                      r={isHovered ? "7" : "5"} 
                       fill="#3b82f6" 
                       stroke="#ffffff"
                       strokeWidth="2"
+                      style={{ cursor: 'pointer' }}
+                      onMouseEnter={() => setHoveredPoint({...item, x, y, type: 'actual'})}
+                      onMouseLeave={() => setHoveredPoint(null)}
                     />
-                    {/* Tooltip on hover */}
-                    <title>{`${item.value.toFixed(2)} ${selectedMetricUnit} - ${formatDate(item.date)}`}</title>
                   </g>
                 );
               })}
@@ -293,30 +300,57 @@ const HealthMetricsChart: React.FC<HealthMetricsChartProps> = ({ data }) => {
                 const x = paddingX + (totalIndex / (chartData.length - 1)) * contentWidth;
                 const normalizedValue = (item.value - minValue) / (maxValue - minValue);
                 const y = chartHeight - paddingY - (normalizedValue * contentHeight);
+                const isHovered = hoveredPoint?.date === item.date && hoveredPoint?.type === 'predicted';
+                
                 return (
                   <g key={`predicted-${index}`}>
                     <circle 
                       cx={x} 
                       cy={y} 
-                      r="5" 
+                      r={isHovered ? "7" : "5"} 
                       fill="#8b5cf6" 
                       stroke="#ffffff"
                       strokeWidth="2"
+                      style={{ cursor: 'pointer' }}
+                      onMouseEnter={() => setHoveredPoint({...item, x, y, type: 'predicted'})}
+                      onMouseLeave={() => setHoveredPoint(null)}
                     />
-                    {/* Tooltip on hover */}
-                    <title>{`${item.value.toFixed(2)} ${selectedMetricUnit} - ${formatDate(item.date)} (Prédiction)`}</title>
                   </g>
                 );
               })}
+              
+              {/* Simple hover tooltip */}
+              {hoveredPoint && (
+                <g>
+                  <rect
+                    x={hoveredPoint.x - 50}
+                    y={hoveredPoint.y - 40}
+                    width="100"
+                    height="30"
+                    rx="4"
+                    fill="rgba(0, 0, 0, 0.8)"
+                  />
+                  <text
+                    x={hoveredPoint.x}
+                    y={hoveredPoint.y - 20}
+                    textAnchor="middle"
+                    fontSize="12"
+                    fill="white"
+                    fontWeight="500"
+                  >
+                    {hoveredPoint.value.toFixed(2)} {selectedMetricUnit}
+                  </text>
+                </g>
+              )}
               
               {/* Legend for current time indicator */}
               {actualData.length > 0 && predictedData.length > 0 && (
                 <text 
                   x={paddingX + ((actualData.length - 1) / (chartData.length - 1)) * contentWidth + 5} 
                   y={paddingY - 5} 
-                  fontSize="10" 
-                  fill="#fbbf24"
-                  fontWeight="bold"
+                  fontSize="11" 
+                  fill="#f59e0b"
+                  fontWeight="600"
                 >
                   Maintenant
                 </text>
@@ -330,13 +364,12 @@ const HealthMetricsChart: React.FC<HealthMetricsChartProps> = ({ data }) => {
         </div>
         
         {chartData.length > 0 && (
-          <div className="text-center mt-4">
-            <p className="text-sm text-gray-500">
-              Unité: {selectedMetricUnit}
-            </p>
-            <p className="text-xs text-gray-400 mt-1">
-              {actualData.length} points historiques • {predictedData.length} prédictions
-            </p>
+          <div className="text-center  pt-4 border-t border-gray-100">
+            <div className="flex justify-center items-center space-x-6 text-sm">
+              <span><strong>Unité:</strong> {selectedMetricUnit}</span>
+              <span><strong>Historique:</strong> {actualData.length} points</span>
+              <span><strong>Prédictions:</strong> {predictedData.length} points</span>
+            </div>
           </div>
         )}
       </div>

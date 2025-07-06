@@ -10,6 +10,15 @@ interface WilayaData {
   capital: string;
 }
 
+interface AlgeriaMapProps {
+  width?: number;
+  height?: number;
+  showColorbar?: boolean;
+  patientData: number[];
+  disease: string;
+  onWilayaSelect?: (wilayaName: string) => void;
+}
+
 // Complete dataset of all 58 Algerian wilayas
 const ALGERIA_WILAYAS: WilayaData[] = [
   { id: 1, name: 'Adrar', population: 489416, surface: 427368, capital: 'Adrar' },
@@ -20,7 +29,7 @@ const ALGERIA_WILAYAS: WilayaData[] = [
   { id: 6, name: 'Béjaïa', population: 959988, surface: 3268, capital: 'Béjaïa' },
   { id: 7, name: 'Biskra', population: 875799, surface: 21671, capital: 'Biskra' },
   { id: 8, name: 'Béchar', population: 326267, surface: 161400, capital: 'Béchar' },
-  { id: 9, name: 'Blida', population: 1149142, surface: 1575, capital: 'Blida' },
+  { id: '9', name: 'Blida', population: 1149142, surface: 1575, capital: 'Blida' },
   { id: 10, name: 'Bouira', population: 802150, surface: 4439, capital: 'Bouira' },
   { id: 11, name: 'Tamanrasset', population: 231936, surface: 556185, capital: 'Tamanrasset' },
   { id: 12, name: 'Tébessa', population: 741894, surface: 14227, capital: 'Tébessa' },
@@ -33,7 +42,8 @@ const ALGERIA_WILAYAS: WilayaData[] = [
   { id: 19, name: 'Sétif', population: 1677078, surface: 6549, capital: 'Sétif' },
   { id: 20, name: 'Saïda', population: 359036, surface: 5138, capital: 'Saïda' },
   { id: 21, name: 'Skikda', population: 993244, surface: 4118, capital: 'Skikda' },
-  { id: 22, name: 'Sidi Bel Abbès', population: 620646, surface: 9150, capital: 'Sidi Bel Abbès' },
+  { id: 22, name: 'Sidi Bel Abbès', population: 620646, surface: 9150, 
+       capital: 'Sidi Bel Abbès' },
   { id: 23, name: 'Annaba', population: 678561, surface: 1439, capital: 'Annaba' },
   { id: 24, name: 'Guelma', population: 501644, surface: 4101, capital: 'Guelma' },
   { id: 25, name: 'Constantine', population: 968998, surface: 2297, capital: 'Constantine' },
@@ -72,33 +82,23 @@ const ALGERIA_WILAYAS: WilayaData[] = [
   { id: 58, name: 'In Guezzam', population: 7045, surface: 86963, capital: 'In Guezzam' }
 ];
 
-interface AlgeriaMapProps {
-  width?: number;
-  height?: number;
-  showColorbar?: boolean;
-}
-
-const AlgeriaMap: React.FC<AlgeriaMapProps> = ({ 
-  width = 500, 
-  height = 400, 
-  showColorbar = false 
+const AlgeriaMap: React.FC<AlgeriaMapProps> = ({
+  width = 500,
+  height = 400,
+  showColorbar = false,
+  patientData,
+  disease,
+  onWilayaSelect
 }) => {
   // State variables
   const [wilayaData] = useState<WilayaData[]>(ALGERIA_WILAYAS);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
-  const [selectedWilaya, setSelectedWilaya] = useState<WilayaData | null>(null);
 
   useEffect(() => {
     // No need to fetch data since we're using inline data
     setLoading(false);
   }, []);
-
-  // Handle wilaya selection
-  const handleWilayaSelection = (wilayaId: number) => {
-    const selected = wilayaData.find(w => w.id === wilayaId) || null;
-    setSelectedWilaya(selected);
-  };
 
   if (loading) {
     return <div className="flex items-center justify-center h-64">Loading Algerian map data...</div>;
@@ -113,28 +113,24 @@ const AlgeriaMap: React.FC<AlgeriaMapProps> = ({
     data: [{
       type: 'scattergeo',
       lon: [
-        1.9, 1.3, 2.9, 7.1, 6.2, 4.8, 5.7, -2.2, 2.8, 3.9, 5.5, 8.1, -1.3, 1.8, 4.1, 
-        3.0, 3.2, 5.8, 5.4, 0.1, 6.9, -0.6, 7.8, 7.4, 6.6, 2.8, 0.1, 4.5, 0.1, 5.3, 
-        -0.6, 1.0, 8.5, 4.8, 3.5, 8.3, -8.1, 1.8, 6.8, 7.1, 7.9, 2.4, 6.3, 2.0, -0.9, 
+        1.9, 1.3, 2.9, 7.1, 6.2, 4.8, 5.7, -2.2, 2.8, 3.9, 5.5, 8.1, -1.3, 1.8, 4.1,
+        3.0, 3.2, 5.8, 5.4, 0.1, 6.9, -0.6, 7.8, 7.4, 6.6, 2.8, 0.1, 4.5, 0.1, 5.3,
+        -0.6, 1.0, 8.5, 4.8, 3.5, 8.3, -8.1, 1.8, 6.8, 7.1, 7.9, 2.4, 6.3, 2.0, -0.9,
         -0.9, 3.7, 0.6, 6.0, 2.9, 5.9, -0.3, -2.5, 0.3, 6.1, 9.5, 2.5, 7.8
       ],
       lat: [
-        27.9, 36.2, 33.8, 35.9, 35.6, 36.8, 34.9, 31.6, 36.5, 36.4, 22.8, 35.4, 34.9, 35.4, 
-        36.7, 36.7, 34.7, 36.8, 36.2, 34.8, 36.9, 35.2, 36.9, 36.5, 36.4, 36.3, 35.9, 35.7, 
-        35.4, 31.9, 35.7, 33.7, 26.5, 36.1, 36.8, 36.7, 27.7, 35.6, 33.4, 35.4, 36.3, 36.6, 
-        36.4, 36.3, 32.9, 33.3, 32.1, 36.6, 33.1, 30.6, 30.1, 34.7, 29.7, 27.9, 33.1, 24.6, 
+        27.9, 36.2, 33.8, 35.9, 35.6, 36.8, 34.9, 31.6, 36.5, 36.4, 22.8, 35.4, 34.9, 35.4,
+        36.7, 36.7, 34.7, 36.8, 36.2, 34.8, 36.9, 35.2, 36.9, 36.5, 36.4, 36.3, 35.9, 35.7,
+        35.4, 31.9, 35.7, 33.7, 26.5, 36.1, 36.8, 36.7, 27.7, 35.6, 33.4, 35.4, 36.3, 36.6,
+        36.4, 36.3, 32.9, 33.3, 32.1, 36.6, 33.1, 30.6, 30.1, 34.7, 29.7, 27.9, 33.1, 24.6,
         27.2, 19.1
       ],
       marker: {
-        size: wilayaData.map(w => Math.sqrt(w.population) / 200), // Size based on population (reduced)
-        color: wilayaData.map(w => w.population), // Color based on population
-        colorscale: [
-          [0, 'rgba(37, 99, 235, 0.3)'],   // #2563eb with low opacity for low values
-          [0.5, 'rgba(37, 99, 235, 0.7)'], // #2563eb with medium opacity for mid values
-          [1, 'rgba(37, 99, 235, 1)']      // #2563eb with full opacity for high values
-        ],
+        size: 10, 
+        color: patientData, 
+        colorscale: 'Viridis', 
         colorbar: showColorbar ? {
-          title: 'Population',
+          title: 'Total Patients',
           titlefont: { color: '#2563eb', size: 12, family: 'Arial, sans-serif' },
           tickfont: { color: '#4B5563', size: 10 },
           thickness: 12,
@@ -148,10 +144,9 @@ const AlgeriaMap: React.FC<AlgeriaMapProps> = ({
         opacity: 0.9,
         symbol: 'circle'
       },
-      text: wilayaData.map(w => `
+      text: wilayaData.map((w, i) => `
         <b style="font-size: 12px">${w.name}</b><br>
-        <span style="color: #4B5563">Population:</span> <b>${w.population.toLocaleString()}</b><br>
-        <span style="color: #4B5563">Surface:</span> <b>${w.surface.toLocaleString()} km²</b>
+        <span style="color: #4B5563">${disease} patients:</span> <b>${patientData[i].toLocaleString()}</b>
       `),
       hoverinfo: 'text',
       hoverlabel: {
@@ -163,16 +158,16 @@ const AlgeriaMap: React.FC<AlgeriaMapProps> = ({
       ids: wilayaData.map(w => String(w.id))
     }],
     layout: {
-      title: undefined, // Removed title
+      title: undefined, 
       paper_bgcolor: 'rgba(0,0,0,0)',
       geo: {
         scope: 'africa',
         resolution: 50,
         lonaxis: {
-          range: [-10, 12] // Approximate longitude range of Algeria
+          range: [-10, 12] 
         },
         lataxis: {
-          range: [18, 38] // Approximate latitude range of Algeria
+          range: [18, 38] 
         },
         showland: true,
         landcolor: 'rgb(240, 240, 240)',
@@ -205,29 +200,27 @@ const AlgeriaMap: React.FC<AlgeriaMapProps> = ({
 
   return (
     <div className="flex flex-col items-center">
-      {/* Plotly Map Component */}
       <div className="w-full">
         <Plot
           data={mapConfig.data as any}
           layout={mapConfig.layout as any}
-          config={{ 
+          config={{
             responsive: true,
             displayModeBar: false,
             displaylogo: false
           }}
           onClick={(event) => {
-            // Get the clicked point data
             if (event.points && event.points[0]) {
               const pointData = event.points[0];
-              // Use type assertion to access the id property
               const wilayaId = Number((pointData as any).id);
-              handleWilayaSelection(wilayaId);
+              const selected = wilayaData.find(w => w.id === wilayaId);
+              if (selected && onWilayaSelect) {
+                onWilayaSelect(selected.name);
+              }
             }
           }}
         />
       </div>
-      
-      
     </div>
   );
 };

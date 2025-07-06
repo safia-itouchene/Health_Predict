@@ -5,12 +5,11 @@ import DashboardHeader from './components/DashboardHeader';
 import PatientOverview from './components/PatientOverview';
 import HealthMetricsChart from './components/HealthMetricsChart';
 import DiseaseRiskChart from './components/DiseaseRiskChart';
-import FamilyGraph from './components/FamilyGraph';
 import StatisticsView from './components/StatisticsView';
-import { fetchStatistics } from './api/healthApi';
 import 'mapbox-gl/dist/mapbox-gl.css';
+import { addMonths, format } from 'date-fns';
+import { fr } from 'date-fns/locale';
 
-// Define interfaces for type safety
 interface Patient {
   NIN: string;
   Nom: string;
@@ -42,51 +41,84 @@ interface DiseaseRisk {
   averageRisk: number;
 }
 
-interface FamilyData {
-  [key: string]: any; // Adjust based on actual familyData structure
+interface Parent {
+  nin: string;
+  fullName: string;
+  firstName: string;
+  lastName: string;
+  relationship: string;
+  sex: string;
+  age: number | null;
 }
 
-interface StatsData {
-  diseaseStats: any[]; // Adjust based on actual structure
-  lifestyleStats: any[]; // Adjust based on actual structure
+interface FamilyData {
+  parents: Parent[];
+  hasParentsData: boolean;
 }
 
 function App() {
   const [selectedPatient, setSelectedPatient] = useState<string | null>('statistics');
   const [patientDetails, setPatientDetails] = useState<Patient | null>(null);
-  const [healthMetrics, setHealthMetrics] = useState<HealthMetric[]>([]);
+  const [healthMetrics, setHealthMetrics] = useState<any[]>([]);
+  const [healthMetricsPredictions, setHealthMetricsPredictions] = useState<any>(null);
+  const [processedHealthMetrics, setProcessedHealthMetrics] = useState<HealthMetric[]>([]);
   const [currentDiseases, setCurrentDiseases] = useState<string[]>([]);
-  const [diseaseRisks, setDiseaseRisks] = useState<DiseaseRisk[]>([]);
+  const [diseaseRisks, setDiseaseRisks] = useState<any[]>([]);
   const [familyData, setFamilyData] = useState<FamilyData | null>(null);
-  const [diseaseStats, setDiseaseStats] = useState<any[]>([]);
-  const [lifestyleStats, setLifestyleStats] = useState<any[]>([]);
   const [activeView, setActiveView] = useState<'overview' | 'metrics' | 'risks' | 'family' | 'statistics'>('statistics');
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false); // No initial loading needed
   const [error, setError] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<'patients' | 'statistics'>('statistics');
 
-  useEffect(() => {
-    const loadInitialData = async () => {
-      try {
-        const statsData: StatsData = await fetchStatistics();
-        setDiseaseStats(statsData.diseaseStats);
-        setLifestyleStats(statsData.lifestyleStats);
-        setLoading(false);
-      } catch (error: any) {
-        console.error('Error fetching initial data:', error);
-        setError('Échec du chargement des statistiques initiales');
-        setLoading(false);
-      }
-    };
-    
-    loadInitialData();
-  }, []);
+  const processHealthMetricsData = (healthMetrics: any[], predictions: any) => {
+    if (!healthMetrics.length || !predictions?.time_series?.length) {
+      setProcessedHealthMetrics([]);
+      return;
+    }
+
+    const sortedHealthMetrics = [...healthMetrics].sort((a, b) => 
+      new Date(a.date).getTime() - new Date(b.date).getTime()
+    );
+    const lastHistoricalDate = new Date(sortedHealthMetrics[sortedHealthMetrics.length - 1].date);
+    const predictionDates = predictions.time_series.map((_: any, index: number) => 
+      addMonths(lastHistoricalDate, index + 1)
+    );
+
+    const metricNames = Object.keys(sortedHealthMetrics[0].metrics);
+
+    const healthMetricsData: HealthMetric[] = metricNames.map(metricName => {
+      const historicalData = sortedHealthMetrics.map(entry => ({
+        month: format(new Date(entry.date), 'MMM yyyy', { locale: fr }),
+        value: entry.metrics[metricName].value,
+        type: 'actual' as const,
+        date: entry.date
+      }));
+
+      const predictedData = predictions.time_series.map((pred: any, index: number) => ({
+        month: format(predictionDates[index], 'MMM yyyy', { locale: fr }),
+        value: pred.predictions[metricName],
+        type: 'predicted' as const,
+        date: format(predictionDates[index], 'yyyy-MM-dd')
+      }));
+
+      const allData = [...historicalData, ...predictedData];
+
+      return {
+        metricName,
+        originalName: metricName,
+        unit: sortedHealthMetrics[0].metrics[metricName].unit,
+        data: allData,
+        currentValue: historicalData[historicalData.length - 1].value
+      };
+    });
+
+    setProcessedHealthMetrics(healthMetricsData);
+  };
 
   const fetchPatientData = async (nin: string) => {
     try {
       setLoading(true);
       setError(null);
-      // Validate that nin is a string of digits
       if (!/^\d+$/.test(nin)) {
         throw new Error('Format NIN invalide');
       }
@@ -100,24 +132,52 @@ function App() {
         body: JSON.stringify({ nin: nin }),
       });
 
-      console.log('Response status:', response.status, 'OK:', response.ok);
       if (!response.ok) {
         const errorText = await response.text();
         console.error('Error response:', errorText);
         throw new Error(`Erreur HTTP ! Statut: ${response.status} - ${errorText}`);
       }
+      const responseData = await response.json();
+      console.log('Response data:', responseData);
 
-      const data = await response.json();
-      console.log('Response data:', data);
-      if (!data.patientDetails || !data.healthMetrics || !data.diseaseRisks || !data.familyData || !data.currentDiseases) {
-        console.error('Missing expected fields in response:', data);
+      if (!responseData.success) {
+        throw new Error('Request failed');
+      }
+
+      const actualData = responseData.data;
+
+      if (
+        !actualData.patientDetails ||
+        !actualData.healthMetrics ||
+        !actualData.diseaseRisks ||
+        !actualData.familyData ||
+        !actualData.currentDiseases
+      ) {
+        console.error('Missing expected fields in response:', actualData);
         throw new Error('Structure de réponse invalide');
       }
-      setCurrentDiseases(data.currentDiseases);
-      setPatientDetails(data.patientDetails);
-      setHealthMetrics(data.healthMetrics);
-      setDiseaseRisks(data.diseaseRisks);
-      setFamilyData(data.familyData);
+
+      setCurrentDiseases(actualData.currentDiseases);
+      setPatientDetails(actualData.patientDetails);
+      setHealthMetrics(actualData.healthMetrics);
+      setHealthMetricsPredictions(actualData.healthMetricsPredictions);
+      processHealthMetricsData(actualData.healthMetrics, actualData.healthMetricsPredictions);
+
+      const gender = actualData.patientDetails.Sexe;
+      const filteredRisks = actualData.diseaseRisks.filter((d: any) => {
+        if (gender === "F" && d.disease === "Cancer_de_la_prostate") return false;
+        if (gender === "M" && d.disease === "Cancer_du_sein") return false;
+        return true;
+      });
+      setDiseaseRisks(filteredRisks.map((d: any) => ({
+        name: d.disease,
+        originalName: d.disease,
+        predicted: true,
+        probability: d.risk / 100,
+        riskLevel: d.risk_level
+      })));
+
+      setFamilyData(actualData.familyData);
       setLoading(false);
     } catch (error: any) {
       console.error('Error fetching patient data:', error);
@@ -132,6 +192,8 @@ function App() {
     } else {
       setPatientDetails(null);
       setHealthMetrics([]);
+      setHealthMetricsPredictions(null);
+      setProcessedHealthMetrics([]);
       setCurrentDiseases([]);
       setDiseaseRisks([]);
       setFamilyData(null);
@@ -170,7 +232,7 @@ function App() {
     if (viewMode === 'statistics' || activeView === 'statistics') {
       return (
         <div className="transition-opacity duration-300 ease-in-out opacity-100">
-          <StatisticsView diseaseStats={diseaseStats} lifestyleStats={lifestyleStats} />
+          <StatisticsView />
         </div>
       );
     }
@@ -191,12 +253,15 @@ function App() {
             currentDiseases={currentDiseases}
             patient={patientDetails}
             healthMetrics={healthMetrics}
+            healthMetricsPredictions={healthMetricsPredictions}
             diseaseRisks={diseaseRisks}
+            familyData={familyData}
+            onPatientSelect={handlePatientSelect}
           />
         );
         break;
       case 'metrics':
-        content = <HealthMetricsChart data={healthMetrics} />;
+        content = <HealthMetricsChart data={processedHealthMetrics} />;
         break;
       case 'risks':
         content = <DiseaseRiskChart data={diseaseRisks} />;
@@ -214,7 +279,10 @@ function App() {
             currentDiseases={currentDiseases}
             patient={patientDetails}
             healthMetrics={healthMetrics}
+            healthMetricsPredictions={healthMetricsPredictions}
             diseaseRisks={diseaseRisks}
+            familyData={familyData}
+            onPatientSelect={handlePatientSelect}
           />
         );
     }
@@ -233,49 +301,38 @@ function App() {
 
     return (
       <div className="mb-4 flex space-x-4">
-        <button 
+        <button
           onClick={() => setActiveView('overview')}
           className={`flex items-center px-4 py-2 rounded-lg transition-all duration-200 ${
-            activeView === 'overview' 
-              ? 'bg-blue-600 text-white' 
+            activeView === 'overview'
+              ? 'bg-blue-600 text-white'
               : 'bg-white text-gray-700 hover:bg-gray-100'
           }`}
         >
           <CircleUser className="mr-2 h-5 w-5" />
           Vue générale
         </button>
-        <button 
+        <button
           onClick={() => setActiveView('metrics')}
           className={`flex items-center px-4 py-2 rounded-lg transition-all duration-200 ${
-            activeView === 'metrics' 
-              ? 'bg-blue-600 text-white' 
+            activeView === 'metrics'
+              ? 'bg-blue-600 text-white'
               : 'bg-white text-gray-700 hover:bg-gray-100'
           }`}
         >
           <LineChart className="mr-2 h-5 w-5" />
-                    Métriques
+          Métriques
         </button>
-        <button 
+        <button
           onClick={() => setActiveView('risks')}
           className={`flex items-center px-4 py-2 rounded-lg transition-all duration-200 ${
-            activeView === 'risks' 
-              ? 'bg-blue-600 text-white' 
+            activeView === 'risks'
+              ? 'bg-blue-600 text-white'
               : 'bg-white text-gray-700 hover:bg-gray-100'
           }`}
         >
           <BarChart className="mr-2 h-5 w-5" />
           Risques
-        </button>
-        <button 
-          onClick={() => setActiveView('family')}
-          className={`flex items-center px-4 py-2 rounded-lg transition-all duration-200 ${
-            activeView === 'family' 
-              ? 'bg-blue-600 text-white' 
-              : 'bg-white text-gray-700 hover:bg-gray-100'
-          }`}
-        >
-          <Users className="mr-2 h-5 w-5" />
-          Famille
         </button>
       </div>
     );
@@ -298,7 +355,7 @@ function App() {
 
         <main className="flex-1 overflow-y-auto p-6">
           {renderNavigationTabs()}
-          
+
           <div className="bg-white rounded-lg shadow p-6 min-h-[calc(100vh-16rem)] transition-all duration-300 ease-in-out">
             {renderContent()}
           </div>

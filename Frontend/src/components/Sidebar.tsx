@@ -367,7 +367,7 @@ const Sidebar: React.FC<SidebarProps> = ({
               <div>
                 <p className="text-xs opacity-80 font-light">Population totale</p>
                 <p className="text-xl font-semibold">{allPatients.length} Patient</p>
-                <p className="text-xs mt-1 opacity-90">+1.7% croissance annuelle</p>
+                <p className="text-xs mt-1 opacity-90">  </p>
               </div>
               <div className="bg-white/20 rounded-full p-2">
                 <Users className="h-5 w-5 text-white" />

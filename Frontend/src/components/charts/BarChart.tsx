@@ -1,20 +1,22 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
-import { monthlyRevenueData } from '../../utils/sampleData';
 
 interface BarChartProps {
+  data: { name: string; total: number }[];
 }
 
-const BarChart: React.FC<BarChartProps> = () => {
- 
+const BarChart: React.FC<BarChartProps> = ({ data }) => {
+  const x = data.map(item => item.name);
+  const y = data.map(item => item.total);
+
   return (
     <div className="h-64">
       <Plot
         data={[
           {
             type: 'bar',
-            x: monthlyRevenueData.x,
-            y: monthlyRevenueData.y,
+            x: x,
+            y: y,
             marker: {
               color: '#2563eb',
               opacity: 0.8,
@@ -30,7 +32,7 @@ const BarChart: React.FC<BarChartProps> = () => {
           responsive: true,
           displayModeBar: false,
         }}
-        style={{ width: '100%', height: '800px' }}
+        style={{ width: '100%', height: '100%' }}
       />
     </div>
   );
