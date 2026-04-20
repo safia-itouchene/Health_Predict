@@ -284,10 +284,5 @@ Faculty of Computer Science
 
 **Defense Date:** July 2, 2025
 
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these guidelines:
 
 
