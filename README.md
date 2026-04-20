@@ -43,6 +43,7 @@ The system follows a **five-layer pipeline** for efficient electronic health rec
 <img width="1089" height="507" alt="Screenshot 2026-04-20 123446" src="https://github.com/user-attachments/assets/4767038f-0d57-4e70-8781-2a2b2684f37a" />
 
 
+---
 
 <table>
 <tr>
