@@ -1,4 +1,4 @@
-# Health Prediction Model (GNN-LSTM)
+# Health Prediction Model (GAT-LSTM)
 
 ## Abstract
 
