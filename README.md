@@ -74,6 +74,8 @@ The proposed architecture follows a structured process for efficiently utilizing
 ## Project Structure
 ### Backend (Python)
 
+<img width="1156" height="572" alt="Screenshot 2026-04-20 124106" src="https://github.com/user-attachments/assets/7877ddf3-69be-4b61-8565-1dd3fe764abd" />
+
 The backend is built with PyTorch and PyTorch Geometric for the ML components, and Flask for the API:
 
 - `model.py`: Defines the GCN-LSTM architecture
