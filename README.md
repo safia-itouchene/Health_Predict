@@ -92,7 +92,7 @@ ly relationships |
 |---------|---------|----------|---------|
 | **patients.csv** | 12,756 | 15 | Static demographics & medical history |
 | **temporal_data.csv** | 1,543,476 | 12 | Monthly health measurements |
-| **parent_relations.csv** | 17,096 | 3 | Fami
+| **parent_relations.csv** | 17,096 | 3 | Family relationships
 ## 🧠 Model Architecture Details
 
 ### GAT-LSTM Hybrid Architecture
