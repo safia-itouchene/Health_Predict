@@ -119,20 +119,24 @@ The system follows a **five-layer pipeline** for efficient electronic health rec
 ## 📊 Dashboard & Visualization
 
 <table>
-
+<tr>
 <td style="text-align: center; padding: 10px;">
 <img src="https://github.com/user-attachments/assets/753ab78f-716a-430d-8947-1efc5aab0c77" alt="Patient Dashboard" style="width: 100%; height: auto; border-radius: 8px;" />
 <b>Patient profile interface</b>
 </td>
+</tr>
+  <tr>
 <td style="text-align: center; padding: 10px;">
 <img src="https://github.com/user-attachments/assets/a26fcf6d-12ed-42bc-b2f5-afb2407dffa4" alt="Health Predictions" style="width: 100%; height: auto; border-radius: 8px;" />
 <b>Health parameters monitoring interface</b>
 </td>
+     </tr>
+  <tr> 
 <td colspan="2" style="text-align: center; padding: 10px;">
-<img src="https://github.com/user-attachments/assets/713b252d-5a25-41bd-9c90-1a06c3b76f50" alt="Population Trends" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px;" />
+<img src="https://github.com/user-attachments/assets/713b252d-5a25-41bd-9c90-1a06c3b76f50" alt="Population Trends" style="width: 100%; height: auto; border-radius: 8px;" />
 <b>Disease risk interface</b>
 </td>
-
+ </tr>
 </table>
 
 
