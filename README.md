@@ -44,7 +44,6 @@ The system follows a **five-layer pipeline** for efficient electronic health rec
 
 
 ly relationships |
-### Processing Pipeline Visualization
 
 <table>
 <tr>
@@ -88,8 +87,6 @@ ly relationships |
 
 ---
 ## 📚 Data Description
-
-### Dataset Overview
 
 | Dataset | Records | Features | Purpose |
 |---------|---------|----------|---------|
